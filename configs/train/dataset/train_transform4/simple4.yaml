@@ -1,0 +1,10 @@
+_target_: torchvision.transforms.Compose
+transforms:
+  - _target_: torchvision.transforms.Resize
+    size: [224, 224]
+  - _target_: torchvision.transforms.ToTensor
+  - _target_: torchvision.transforms.RandomHorizontalFlip
+    p : 1
+  - _target_: torchvision.transforms.Normalize
+    mean: [0.495, 0.465, 0.510]
+    std: [0.200, 0.219, 0.241]

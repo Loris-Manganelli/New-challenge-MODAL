@@ -1,0 +1,49 @@
+{
+    "os": "macOS-14.2.1-arm64-arm-64bit",
+    "python": "3.12.1",
+    "heartbeatAt": "2024-05-19T18:43:59.951043",
+    "startedAt": "2024-05-19T18:43:59.288914",
+    "docker": null,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "/Users/loris/X/MODAL/Challenge/challenge-modal/train.py",
+    "codePathLocal": null,
+    "codePath": "train.py",
+    "git": {
+        "remote": "git@github.com:Loris-Manganelli/challenge-modal.git",
+        "commit": "c60102a5f8a057d65bdd3a1c0c06ff93ff6e142c"
+    },
+    "email": "lorismanganelli05@gmail.com",
+    "root": "/Users/loris/X/MODAL/Challenge/challenge-modal",
+    "host": "MacBook-Air-de-Manganelli.local",
+    "username": "loris",
+    "executable": "/Library/Frameworks/Python.framework/Versions/3.12/bin/python3",
+    "cpu_count": 8,
+    "cpu_count_logical": 8,
+    "cpu_freq": {
+        "current": 3204,
+        "min": 600,
+        "max": 3204
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 3204,
+            "min": 600,
+            "max": 3204
+        }
+    ],
+    "disk": {
+        "/": {
+            "total": 228.27386474609375,
+            "used": 13.371330261230469
+        }
+    },
+    "gpuapple": {
+        "type": "arm",
+        "vendor": "Apple"
+    },
+    "memory": {
+        "total": 8.0
+    }
+}

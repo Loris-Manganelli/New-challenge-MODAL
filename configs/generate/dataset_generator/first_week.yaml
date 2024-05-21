@@ -1,0 +1,5 @@
+_target_: data.dataset_generators.first_week.FirstWeekGenerator
+generator: ${image_generator}
+batch_size: ${batch_size}
+output_dir: ${data_dir}/train/first_week
+num_images_per_label: 200

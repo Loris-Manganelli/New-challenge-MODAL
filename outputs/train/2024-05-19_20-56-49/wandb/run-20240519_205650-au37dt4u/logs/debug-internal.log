@@ -1,0 +1,70 @@
+2024-05-19 20:56:50,324 INFO    StreamThr :97258 [internal.py:wandb_internal():86] W&B internal server running at pid: 97258, started at: 2024-05-19 20:56:50.323542
+2024-05-19 20:56:50,325 DEBUG   HandlerThread:97258 [handler.py:handle_request():146] handle_request: status
+2024-05-19 20:56:50,328 INFO    WriterThread:97258 [datastore.py:open_for_write():87] open: /Users/loris/X/MODAL/Challenge/challenge-modal/outputs/train/2024-05-19_20-56-49/wandb/run-20240519_205650-au37dt4u/run-au37dt4u.wandb
+2024-05-19 20:56:50,329 DEBUG   SenderThread:97258 [sender.py:send():379] send: header
+2024-05-19 20:56:50,354 DEBUG   SenderThread:97258 [sender.py:send():379] send: run
+2024-05-19 20:56:50,758 INFO    SenderThread:97258 [dir_watcher.py:__init__():211] watching files in: /Users/loris/X/MODAL/Challenge/challenge-modal/outputs/train/2024-05-19_20-56-49/wandb/run-20240519_205650-au37dt4u/files
+2024-05-19 20:56:50,758 INFO    SenderThread:97258 [sender.py:_start_run_threads():1124] run started: au37dt4u with start time 1716145010.32491
+2024-05-19 20:56:50,770 DEBUG   HandlerThread:97258 [handler.py:handle_request():146] handle_request: check_version
+2024-05-19 20:56:50,770 DEBUG   SenderThread:97258 [sender.py:send_request():406] send_request: check_version
+2024-05-19 20:56:50,857 DEBUG   HandlerThread:97258 [handler.py:handle_request():146] handle_request: run_start
+2024-05-19 20:56:50,862 DEBUG   HandlerThread:97258 [system_info.py:__init__():26] System info init
+2024-05-19 20:56:50,862 DEBUG   HandlerThread:97258 [system_info.py:__init__():41] System info init done
+2024-05-19 20:56:50,862 INFO    HandlerThread:97258 [system_monitor.py:start():194] Starting system monitor
+2024-05-19 20:56:50,862 INFO    SystemMonitor:97258 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-05-19 20:56:50,863 INFO    HandlerThread:97258 [system_monitor.py:probe():214] Collecting system info
+2024-05-19 20:56:50,863 INFO    SystemMonitor:97258 [interfaces.py:start():190] Started cpu monitoring
+2024-05-19 20:56:50,863 DEBUG   HandlerThread:97258 [system_info.py:probe():150] Probing system
+2024-05-19 20:56:50,864 INFO    SystemMonitor:97258 [interfaces.py:start():190] Started disk monitoring
+2024-05-19 20:56:50,866 INFO    SystemMonitor:97258 [interfaces.py:start():190] Started gpuapple monitoring
+2024-05-19 20:56:50,867 INFO    SystemMonitor:97258 [interfaces.py:start():190] Started memory monitoring
+2024-05-19 20:56:50,868 INFO    SystemMonitor:97258 [interfaces.py:start():190] Started network monitoring
+2024-05-19 20:56:50,871 DEBUG   HandlerThread:97258 [system_info.py:_probe_git():135] Probing git
+2024-05-19 20:56:50,899 DEBUG   HandlerThread:97258 [system_info.py:_probe_git():143] Probing git done
+2024-05-19 20:56:50,900 DEBUG   HandlerThread:97258 [system_info.py:probe():198] Probing system done
+2024-05-19 20:56:50,900 DEBUG   HandlerThread:97258 [system_monitor.py:probe():223] {'os': 'macOS-14.2.1-arm64-arm-64bit', 'python': '3.12.1', 'heartbeatAt': '2024-05-19T18:56:50.864628', 'startedAt': '2024-05-19T18:56:50.314844', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': '/Users/loris/X/MODAL/Challenge/challenge-modal/train.py', 'codePathLocal': None, 'codePath': 'train.py', 'git': {'remote': 'git@github.com:Loris-Manganelli/challenge-modal.git', 'commit': 'c60102a5f8a057d65bdd3a1c0c06ff93ff6e142c'}, 'email': 'lorismanganelli05@gmail.com', 'root': '/Users/loris/X/MODAL/Challenge/challenge-modal', 'host': 'MacBook-Air-de-Manganelli.local', 'username': 'loris', 'executable': '/Library/Frameworks/Python.framework/Versions/3.12/bin/python3', 'cpu_count': 8, 'cpu_count_logical': 8, 'cpu_freq': {'current': 3204, 'min': 600, 'max': 3204}, 'cpu_freq_per_core': [{'current': 3204, 'min': 600, 'max': 3204}], 'disk': {'/': {'total': 228.27386474609375, 'used': 13.371330261230469}}, 'gpuapple': {'type': 'arm', 'vendor': 'Apple'}, 'memory': {'total': 8.0}}
+2024-05-19 20:56:50,900 INFO    HandlerThread:97258 [system_monitor.py:probe():224] Finished collecting system info
+2024-05-19 20:56:50,900 INFO    HandlerThread:97258 [system_monitor.py:probe():227] Publishing system info
+2024-05-19 20:56:50,900 INFO    HandlerThread:97258 [system_monitor.py:probe():229] Finished publishing system info
+2024-05-19 20:56:50,902 DEBUG   SenderThread:97258 [sender.py:send():379] send: files
+2024-05-19 20:56:50,903 INFO    SenderThread:97258 [sender.py:_save_file():1390] saving file wandb-metadata.json with policy now
+2024-05-19 20:56:50,959 DEBUG   HandlerThread:97258 [handler.py:handle_request():146] handle_request: python_packages
+2024-05-19 20:56:50,960 DEBUG   SenderThread:97258 [sender.py:send_request():406] send_request: python_packages
+2024-05-19 20:56:50,960 DEBUG   HandlerThread:97258 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-19 20:56:50,960 DEBUG   SenderThread:97258 [sender.py:send():379] send: telemetry
+2024-05-19 20:56:50,960 DEBUG   SenderThread:97258 [sender.py:send_request():406] send_request: stop_status
+2024-05-19 20:56:50,961 DEBUG   HandlerThread:97258 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-19 20:56:51,510 INFO    wandb-upload_0:97258 [upload_job.py:push():131] Uploaded file /var/folders/km/80l51k151678k2t3kghmrtp40000gn/T/tmpplppu2a6wandb/3yg0io5z-wandb-metadata.json
+2024-05-19 20:56:51,761 INFO    Thread-12 :97258 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/loris/X/MODAL/Challenge/challenge-modal/outputs/train/2024-05-19_20-56-49/wandb/run-20240519_205650-au37dt4u/files/wandb-metadata.json
+2024-05-19 20:56:51,761 INFO    Thread-12 :97258 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/loris/X/MODAL/Challenge/challenge-modal/outputs/train/2024-05-19_20-56-49/wandb/run-20240519_205650-au37dt4u/files/requirements.txt
+2024-05-19 20:56:51,761 INFO    Thread-12 :97258 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/loris/X/MODAL/Challenge/challenge-modal/outputs/train/2024-05-19_20-56-49/wandb/run-20240519_205650-au37dt4u/files/output.log
+2024-05-19 20:56:53,649 DEBUG   SenderThread:97258 [sender.py:send():379] send: telemetry
+2024-05-19 20:56:53,770 INFO    Thread-12 :97258 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/loris/X/MODAL/Challenge/challenge-modal/outputs/train/2024-05-19_20-56-49/wandb/run-20240519_205650-au37dt4u/files/output.log
+2024-05-19 20:56:55,780 INFO    Thread-12 :97258 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/loris/X/MODAL/Challenge/challenge-modal/outputs/train/2024-05-19_20-56-49/wandb/run-20240519_205650-au37dt4u/files/output.log
+2024-05-19 20:56:55,833 DEBUG   HandlerThread:97258 [handler.py:handle_request():146] handle_request: status_report
+2024-05-19 20:57:00,858 DEBUG   HandlerThread:97258 [handler.py:handle_request():146] handle_request: status_report
+2024-05-19 20:57:05,884 DEBUG   HandlerThread:97258 [handler.py:handle_request():146] handle_request: status_report
+2024-05-19 20:57:05,966 DEBUG   HandlerThread:97258 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-19 20:57:05,967 DEBUG   SenderThread:97258 [sender.py:send_request():406] send_request: stop_status
+2024-05-19 20:57:05,970 DEBUG   HandlerThread:97258 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-19 20:57:11,163 DEBUG   HandlerThread:97258 [handler.py:handle_request():146] handle_request: status_report
+2024-05-19 20:57:16,199 DEBUG   HandlerThread:97258 [handler.py:handle_request():146] handle_request: status_report
+2024-05-19 20:57:20,968 DEBUG   HandlerThread:97258 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-19 20:57:20,969 DEBUG   SenderThread:97258 [sender.py:send_request():406] send_request: stop_status
+2024-05-19 20:57:20,973 DEBUG   HandlerThread:97258 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-19 20:57:22,161 DEBUG   HandlerThread:97258 [handler.py:handle_request():146] handle_request: status_report
+2024-05-19 20:57:22,918 INFO    Thread-12 :97258 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/loris/X/MODAL/Challenge/challenge-modal/outputs/train/2024-05-19_20-56-49/wandb/run-20240519_205650-au37dt4u/files/config.yaml
+2024-05-19 20:57:26,155 DEBUG   HandlerThread:97258 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-19 20:57:26,158 DEBUG   SenderThread:97258 [sender.py:send():379] send: history
+2024-05-19 20:57:26,159 DEBUG   SenderThread:97258 [sender.py:send_request():406] send_request: summary_record
+2024-05-19 20:57:26,159 INFO    SenderThread:97258 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-19 20:57:26,938 INFO    Thread-12 :97258 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/loris/X/MODAL/Challenge/challenge-modal/outputs/train/2024-05-19_20-56-49/wandb/run-20240519_205650-au37dt4u/files/wandb-summary.json
+2024-05-19 20:57:26,956 INFO    cpu       :97258 [interfaces.py:monitor():140] Process cpu has exited.
+2024-05-19 20:57:26,956 INFO    memory    :97258 [interfaces.py:monitor():140] Process proc.memory.rssMB has exited.
+2024-05-19 20:57:26,957 DEBUG   SystemMonitor:97258 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-05-19 20:57:26,957 DEBUG   SystemMonitor:97258 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-05-19 20:57:26,957 DEBUG   SystemMonitor:97258 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-05-19 20:57:26,960 DEBUG   SenderThread:97258 [sender.py:send():379] send: telemetry
+2024-05-19 20:57:26,960 DEBUG   SenderThread:97258 [sender.py:send():379] send: stats
+2024-05-19 20:57:27,965 DEBUG   HandlerThread:97258 [handler.py:handle_request():146] handle_request: status_report
+2024-05-19 20:57:28,027 INFO    MainThread:97258 [internal.py:handle_exit():76] Internal process exited

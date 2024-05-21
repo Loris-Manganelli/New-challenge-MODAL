@@ -1,0 +1,220 @@
+2024-05-10 14:12:35,231 INFO    StreamThr :48947 [internal.py:wandb_internal():85] W&B internal server running at pid: 48947, started at: 2024-05-10 14:12:35.230046
+2024-05-10 14:12:35,232 DEBUG   HandlerThread:48947 [handler.py:handle_request():158] handle_request: status
+2024-05-10 14:12:35,234 INFO    WriterThread:48947 [datastore.py:open_for_write():87] open: /Users/loris/X/MODAL/Challenge/challenge-modal/outputs/train/2024-05-10_14-12-33/wandb/run-20240510_141235-2wbmmhii/run-2wbmmhii.wandb
+2024-05-10 14:12:35,235 DEBUG   SenderThread:48947 [sender.py:send():378] send: header
+2024-05-10 14:12:35,262 DEBUG   SenderThread:48947 [sender.py:send():378] send: run
+2024-05-10 14:12:35,967 INFO    SenderThread:48947 [dir_watcher.py:__init__():211] watching files in: /Users/loris/X/MODAL/Challenge/challenge-modal/outputs/train/2024-05-10_14-12-33/wandb/run-20240510_141235-2wbmmhii/files
+2024-05-10 14:12:35,968 INFO    SenderThread:48947 [sender.py:_start_run_threads():1123] run started: 2wbmmhii with start time 1715343155.230867
+2024-05-10 14:12:35,982 DEBUG   HandlerThread:48947 [handler.py:handle_request():158] handle_request: check_version
+2024-05-10 14:12:35,982 DEBUG   SenderThread:48947 [sender.py:send_request():405] send_request: check_version
+2024-05-10 14:12:36,089 DEBUG   HandlerThread:48947 [handler.py:handle_request():158] handle_request: run_start
+2024-05-10 14:12:36,097 DEBUG   HandlerThread:48947 [system_info.py:__init__():26] System info init
+2024-05-10 14:12:36,097 DEBUG   HandlerThread:48947 [system_info.py:__init__():41] System info init done
+2024-05-10 14:12:36,097 INFO    HandlerThread:48947 [system_monitor.py:start():194] Starting system monitor
+2024-05-10 14:12:36,097 INFO    SystemMonitor:48947 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-05-10 14:12:36,097 INFO    HandlerThread:48947 [system_monitor.py:probe():214] Collecting system info
+2024-05-10 14:12:36,098 INFO    SystemMonitor:48947 [interfaces.py:start():188] Started cpu monitoring
+2024-05-10 14:12:36,103 INFO    SystemMonitor:48947 [interfaces.py:start():188] Started disk monitoring
+2024-05-10 14:12:36,104 INFO    SystemMonitor:48947 [interfaces.py:start():188] Started gpuapple monitoring
+2024-05-10 14:12:36,106 INFO    SystemMonitor:48947 [interfaces.py:start():188] Started memory monitoring
+2024-05-10 14:12:36,108 INFO    SystemMonitor:48947 [interfaces.py:start():188] Started network monitoring
+2024-05-10 14:12:36,122 ERROR   HandlerThread:48947 [gpu_apple.py:probe():176] GPU stats error: Command '['/Users/loris/miniconda3/envs/cheese_challenge/lib/python3.10/site-packages/wandb/bin/apple_gpu_stats', '--json']' died with <Signals.SIGTRAP: 5>.
+Traceback (most recent call last):
+  File "/Users/loris/miniconda3/envs/cheese_challenge/lib/python3.10/site-packages/wandb/sdk/internal/system/assets/gpu_apple.py", line 164, in probe
+    subprocess.check_output(command, universal_newlines=True)
+  File "/Users/loris/miniconda3/envs/cheese_challenge/lib/python3.10/subprocess.py", line 421, in check_output
+    return run(*popenargs, stdout=PIPE, timeout=timeout, check=True,
+  File "/Users/loris/miniconda3/envs/cheese_challenge/lib/python3.10/subprocess.py", line 526, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['/Users/loris/miniconda3/envs/cheese_challenge/lib/python3.10/site-packages/wandb/bin/apple_gpu_stats', '--json']' died with <Signals.SIGTRAP: 5>.
+2024-05-10 14:12:36,122 ERROR   gpuapple  :48947 [gpu_apple.py:sample():110] GPU stats error: Command '['/Users/loris/miniconda3/envs/cheese_challenge/lib/python3.10/site-packages/wandb/bin/apple_gpu_stats', '--json']' died with <Signals.SIGTRAP: 5>.
+Traceback (most recent call last):
+  File "/Users/loris/miniconda3/envs/cheese_challenge/lib/python3.10/site-packages/wandb/sdk/internal/system/assets/gpu_apple.py", line 64, in sample
+    subprocess.check_output(command, universal_newlines=True)
+  File "/Users/loris/miniconda3/envs/cheese_challenge/lib/python3.10/subprocess.py", line 421, in check_output
+    return run(*popenargs, stdout=PIPE, timeout=timeout, check=True,
+  File "/Users/loris/miniconda3/envs/cheese_challenge/lib/python3.10/subprocess.py", line 526, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['/Users/loris/miniconda3/envs/cheese_challenge/lib/python3.10/site-packages/wandb/bin/apple_gpu_stats', '--json']' died with <Signals.SIGTRAP: 5>.
+2024-05-10 14:12:36,124 DEBUG   HandlerThread:48947 [system_info.py:probe():150] Probing system
+2024-05-10 14:12:36,128 DEBUG   HandlerThread:48947 [system_info.py:_probe_git():135] Probing git
+2024-05-10 14:12:36,148 DEBUG   HandlerThread:48947 [system_info.py:_probe_git():143] Probing git done
+2024-05-10 14:12:36,148 DEBUG   HandlerThread:48947 [system_info.py:probe():198] Probing system done
+2024-05-10 14:12:36,148 DEBUG   HandlerThread:48947 [system_monitor.py:probe():223] {'os': 'macOS-14.2.1-arm64-arm-64bit', 'python': '3.10.14', 'heartbeatAt': '2024-05-10T12:12:36.124461', 'startedAt': '2024-05-10T12:12:35.221515', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': '/Users/loris/X/MODAL/Challenge/challenge-modal/train.py', 'codePathLocal': None, 'codePath': 'train.py', 'git': {'remote': 'git@github.com:Loris-Manganelli/challenge-modal.git', 'commit': '99a246825c7d7643a020a8d004e1b58de7ded0b0'}, 'email': 'lorismanganelli05@gmail.com', 'root': '/Users/loris/X/MODAL/Challenge/challenge-modal', 'host': 'airdemanganelli.home', 'username': 'loris', 'executable': '/Users/loris/miniconda3/envs/cheese_challenge/bin/python3', 'cpu_count': 8, 'cpu_count_logical': 8, 'cpu_freq': {'current': 3204, 'min': 600, 'max': 3204}, 'cpu_freq_per_core': [{'current': 3204, 'min': 600, 'max': 3204}], 'disk': {'/': {'total': 228.27386474609375, 'used': 13.371330261230469}}, 'gpuapple': {'type': 'arm', 'vendor': 'Apple'}, 'memory': {'total': 8.0}}
+2024-05-10 14:12:36,148 INFO    HandlerThread:48947 [system_monitor.py:probe():224] Finished collecting system info
+2024-05-10 14:12:36,148 INFO    HandlerThread:48947 [system_monitor.py:probe():227] Publishing system info
+2024-05-10 14:12:36,148 DEBUG   HandlerThread:48947 [system_info.py:_save_conda():207] Saving list of conda packages installed into the current environment
+2024-05-10 14:12:36,974 INFO    Thread-12 :48947 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/loris/X/MODAL/Challenge/challenge-modal/outputs/train/2024-05-10_14-12-33/wandb/run-20240510_141235-2wbmmhii/files/conda-environment.yaml
+2024-05-10 14:12:37,437 DEBUG   HandlerThread:48947 [system_info.py:_save_conda():222] Saving conda packages done
+2024-05-10 14:12:37,438 INFO    HandlerThread:48947 [system_monitor.py:probe():229] Finished publishing system info
+2024-05-10 14:12:37,440 DEBUG   SenderThread:48947 [sender.py:send():378] send: files
+2024-05-10 14:12:37,440 INFO    SenderThread:48947 [sender.py:_save_file():1389] saving file wandb-metadata.json with policy now
+2024-05-10 14:12:37,466 DEBUG   HandlerThread:48947 [handler.py:handle_request():158] handle_request: python_packages
+2024-05-10 14:12:37,467 DEBUG   SenderThread:48947 [sender.py:send_request():405] send_request: python_packages
+2024-05-10 14:12:37,467 DEBUG   HandlerThread:48947 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-10 14:12:37,467 DEBUG   SenderThread:48947 [sender.py:send_request():405] send_request: stop_status
+2024-05-10 14:12:37,667 DEBUG   SenderThread:48947 [sender.py:send():378] send: telemetry
+2024-05-10 14:12:37,978 INFO    Thread-12 :48947 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/loris/X/MODAL/Challenge/challenge-modal/outputs/train/2024-05-10_14-12-33/wandb/run-20240510_141235-2wbmmhii/files/conda-environment.yaml
+2024-05-10 14:12:37,979 INFO    Thread-12 :48947 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/loris/X/MODAL/Challenge/challenge-modal/outputs/train/2024-05-10_14-12-33/wandb/run-20240510_141235-2wbmmhii/files/requirements.txt
+2024-05-10 14:12:37,979 INFO    Thread-12 :48947 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/loris/X/MODAL/Challenge/challenge-modal/outputs/train/2024-05-10_14-12-33/wandb/run-20240510_141235-2wbmmhii/files/output.log
+2024-05-10 14:12:37,979 INFO    Thread-12 :48947 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/loris/X/MODAL/Challenge/challenge-modal/outputs/train/2024-05-10_14-12-33/wandb/run-20240510_141235-2wbmmhii/files/wandb-metadata.json
+2024-05-10 14:12:38,109 INFO    wandb-upload_0:48947 [upload_job.py:push():130] Uploaded file /var/folders/km/80l51k151678k2t3kghmrtp40000gn/T/tmpfxz_n_91wandb/p0kn1l06-wandb-metadata.json
+2024-05-10 14:12:38,154 ERROR   gpuapple  :48947 [gpu_apple.py:sample():110] GPU stats error: Command '['/Users/loris/miniconda3/envs/cheese_challenge/lib/python3.10/site-packages/wandb/bin/apple_gpu_stats', '--json']' died with <Signals.SIGTRAP: 5>.
+Traceback (most recent call last):
+  File "/Users/loris/miniconda3/envs/cheese_challenge/lib/python3.10/site-packages/wandb/sdk/internal/system/assets/gpu_apple.py", line 64, in sample
+    subprocess.check_output(command, universal_newlines=True)
+  File "/Users/loris/miniconda3/envs/cheese_challenge/lib/python3.10/subprocess.py", line 421, in check_output
+    return run(*popenargs, stdout=PIPE, timeout=timeout, check=True,
+  File "/Users/loris/miniconda3/envs/cheese_challenge/lib/python3.10/subprocess.py", line 526, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['/Users/loris/miniconda3/envs/cheese_challenge/lib/python3.10/site-packages/wandb/bin/apple_gpu_stats', '--json']' died with <Signals.SIGTRAP: 5>.
+2024-05-10 14:12:39,524 DEBUG   SenderThread:48947 [sender.py:send():378] send: telemetry
+2024-05-10 14:12:39,641 DEBUG   SenderThread:48947 [sender.py:send():378] send: telemetry
+2024-05-10 14:12:39,790 DEBUG   SenderThread:48947 [sender.py:send():378] send: exit
+2024-05-10 14:12:39,790 INFO    SenderThread:48947 [sender.py:send_exit():585] handling exit code: 1
+2024-05-10 14:12:39,790 INFO    SenderThread:48947 [sender.py:send_exit():587] handling runtime: 3
+2024-05-10 14:12:39,790 INFO    SenderThread:48947 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-10 14:12:39,791 INFO    SenderThread:48947 [sender.py:send_exit():593] send defer
+2024-05-10 14:12:39,791 DEBUG   HandlerThread:48947 [handler.py:handle_request():158] handle_request: defer
+2024-05-10 14:12:39,791 INFO    HandlerThread:48947 [handler.py:handle_request_defer():184] handle defer: 0
+2024-05-10 14:12:39,791 DEBUG   SenderThread:48947 [sender.py:send_request():405] send_request: defer
+2024-05-10 14:12:39,791 INFO    SenderThread:48947 [sender.py:send_request_defer():609] handle sender defer: 0
+2024-05-10 14:12:39,791 INFO    SenderThread:48947 [sender.py:transition_state():613] send defer: 1
+2024-05-10 14:12:39,791 DEBUG   HandlerThread:48947 [handler.py:handle_request():158] handle_request: defer
+2024-05-10 14:12:39,791 INFO    HandlerThread:48947 [handler.py:handle_request_defer():184] handle defer: 1
+2024-05-10 14:12:39,791 DEBUG   SenderThread:48947 [sender.py:send_request():405] send_request: defer
+2024-05-10 14:12:39,791 INFO    SenderThread:48947 [sender.py:send_request_defer():609] handle sender defer: 1
+2024-05-10 14:12:39,791 INFO    SenderThread:48947 [sender.py:transition_state():613] send defer: 2
+2024-05-10 14:12:39,791 DEBUG   HandlerThread:48947 [handler.py:handle_request():158] handle_request: defer
+2024-05-10 14:12:39,791 INFO    HandlerThread:48947 [handler.py:handle_request_defer():184] handle defer: 2
+2024-05-10 14:12:39,791 INFO    HandlerThread:48947 [system_monitor.py:finish():203] Stopping system monitor
+2024-05-10 14:12:39,791 DEBUG   SystemMonitor:48947 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-05-10 14:12:39,791 DEBUG   SystemMonitor:48947 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-05-10 14:12:39,791 INFO    HandlerThread:48947 [interfaces.py:finish():200] Joined cpu monitor
+2024-05-10 14:12:39,791 DEBUG   SystemMonitor:48947 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-05-10 14:12:39,791 INFO    HandlerThread:48947 [interfaces.py:finish():200] Joined disk monitor
+2024-05-10 14:12:39,792 INFO    HandlerThread:48947 [interfaces.py:finish():200] Joined gpuapple monitor
+2024-05-10 14:12:39,792 INFO    HandlerThread:48947 [interfaces.py:finish():200] Joined memory monitor
+2024-05-10 14:12:39,792 INFO    HandlerThread:48947 [interfaces.py:finish():200] Joined network monitor
+2024-05-10 14:12:39,792 DEBUG   SenderThread:48947 [sender.py:send_request():405] send_request: defer
+2024-05-10 14:12:39,792 INFO    SenderThread:48947 [sender.py:send_request_defer():609] handle sender defer: 2
+2024-05-10 14:12:39,792 INFO    SenderThread:48947 [sender.py:transition_state():613] send defer: 3
+2024-05-10 14:12:39,792 DEBUG   SenderThread:48947 [sender.py:send():378] send: telemetry
+2024-05-10 14:12:39,792 DEBUG   HandlerThread:48947 [handler.py:handle_request():158] handle_request: defer
+2024-05-10 14:12:39,792 DEBUG   SenderThread:48947 [sender.py:send():378] send: stats
+2024-05-10 14:12:39,792 INFO    HandlerThread:48947 [handler.py:handle_request_defer():184] handle defer: 3
+2024-05-10 14:12:39,792 DEBUG   SenderThread:48947 [sender.py:send_request():405] send_request: defer
+2024-05-10 14:12:39,792 INFO    SenderThread:48947 [sender.py:send_request_defer():609] handle sender defer: 3
+2024-05-10 14:12:39,792 INFO    SenderThread:48947 [sender.py:transition_state():613] send defer: 4
+2024-05-10 14:12:39,792 DEBUG   HandlerThread:48947 [handler.py:handle_request():158] handle_request: defer
+2024-05-10 14:12:39,792 INFO    HandlerThread:48947 [handler.py:handle_request_defer():184] handle defer: 4
+2024-05-10 14:12:39,792 DEBUG   SenderThread:48947 [sender.py:send_request():405] send_request: defer
+2024-05-10 14:12:39,792 INFO    SenderThread:48947 [sender.py:send_request_defer():609] handle sender defer: 4
+2024-05-10 14:12:39,792 INFO    SenderThread:48947 [sender.py:transition_state():613] send defer: 5
+2024-05-10 14:12:39,792 DEBUG   HandlerThread:48947 [handler.py:handle_request():158] handle_request: defer
+2024-05-10 14:12:39,792 INFO    HandlerThread:48947 [handler.py:handle_request_defer():184] handle defer: 5
+2024-05-10 14:12:39,792 DEBUG   SenderThread:48947 [sender.py:send():378] send: summary
+2024-05-10 14:12:39,792 INFO    SenderThread:48947 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-10 14:12:39,793 DEBUG   SenderThread:48947 [sender.py:send_request():405] send_request: defer
+2024-05-10 14:12:39,793 INFO    SenderThread:48947 [sender.py:send_request_defer():609] handle sender defer: 5
+2024-05-10 14:12:39,793 INFO    SenderThread:48947 [sender.py:transition_state():613] send defer: 6
+2024-05-10 14:12:39,793 DEBUG   HandlerThread:48947 [handler.py:handle_request():158] handle_request: defer
+2024-05-10 14:12:39,793 INFO    HandlerThread:48947 [handler.py:handle_request_defer():184] handle defer: 6
+2024-05-10 14:12:39,793 DEBUG   SenderThread:48947 [sender.py:send_request():405] send_request: defer
+2024-05-10 14:12:39,793 INFO    SenderThread:48947 [sender.py:send_request_defer():609] handle sender defer: 6
+2024-05-10 14:12:39,794 DEBUG   HandlerThread:48947 [handler.py:handle_request():158] handle_request: status_report
+2024-05-10 14:12:39,946 INFO    SenderThread:48947 [sender.py:transition_state():613] send defer: 7
+2024-05-10 14:12:39,947 DEBUG   HandlerThread:48947 [handler.py:handle_request():158] handle_request: defer
+2024-05-10 14:12:39,947 INFO    HandlerThread:48947 [handler.py:handle_request_defer():184] handle defer: 7
+2024-05-10 14:12:39,947 DEBUG   SenderThread:48947 [sender.py:send_request():405] send_request: defer
+2024-05-10 14:12:39,947 INFO    SenderThread:48947 [sender.py:send_request_defer():609] handle sender defer: 7
+2024-05-10 14:12:39,993 INFO    Thread-12 :48947 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/loris/X/MODAL/Challenge/challenge-modal/outputs/train/2024-05-10_14-12-33/wandb/run-20240510_141235-2wbmmhii/files/output.log
+2024-05-10 14:12:39,994 INFO    Thread-12 :48947 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/loris/X/MODAL/Challenge/challenge-modal/outputs/train/2024-05-10_14-12-33/wandb/run-20240510_141235-2wbmmhii/files/config.yaml
+2024-05-10 14:12:39,994 INFO    Thread-12 :48947 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/loris/X/MODAL/Challenge/challenge-modal/outputs/train/2024-05-10_14-12-33/wandb/run-20240510_141235-2wbmmhii/files/wandb-summary.json
+2024-05-10 14:12:40,796 DEBUG   HandlerThread:48947 [handler.py:handle_request():158] handle_request: poll_exit
+2024-05-10 14:12:41,861 INFO    SenderThread:48947 [sender.py:transition_state():613] send defer: 8
+2024-05-10 14:12:41,861 DEBUG   SenderThread:48947 [sender.py:send_request():405] send_request: poll_exit
+2024-05-10 14:12:41,861 DEBUG   HandlerThread:48947 [handler.py:handle_request():158] handle_request: defer
+2024-05-10 14:12:41,862 INFO    HandlerThread:48947 [handler.py:handle_request_defer():184] handle defer: 8
+2024-05-10 14:12:41,862 DEBUG   SenderThread:48947 [sender.py:send_request():405] send_request: defer
+2024-05-10 14:12:41,863 INFO    SenderThread:48947 [sender.py:send_request_defer():609] handle sender defer: 8
+2024-05-10 14:12:41,863 INFO    SenderThread:48947 [job_builder.py:build():432] Attempting to build job artifact
+2024-05-10 14:12:41,863 INFO    SenderThread:48947 [job_builder.py:_get_source_type():565] is repo sourced job
+2024-05-10 14:12:41,899 INFO    SenderThread:48947 [job_builder.py:build():541] adding wandb-job metadata file
+2024-05-10 14:12:41,901 INFO    SenderThread:48947 [sender.py:transition_state():613] send defer: 9
+2024-05-10 14:12:41,901 DEBUG   HandlerThread:48947 [handler.py:handle_request():158] handle_request: defer
+2024-05-10 14:12:41,901 DEBUG   SenderThread:48947 [sender.py:send():378] send: artifact
+2024-05-10 14:12:41,902 INFO    HandlerThread:48947 [handler.py:handle_request_defer():184] handle defer: 9
+2024-05-10 14:12:42,005 INFO    Thread-12 :48947 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/loris/X/MODAL/Challenge/challenge-modal/outputs/train/2024-05-10_14-12-33/wandb/run-20240510_141235-2wbmmhii/files/output.log
+2024-05-10 14:12:42,808 DEBUG   HandlerThread:48947 [handler.py:handle_request():158] handle_request: poll_exit
+2024-05-10 14:12:43,649 INFO    wandb-upload_0:48947 [upload_job.py:push():88] Uploaded file /var/folders/km/80l51k151678k2t3kghmrtp40000gn/T/tmpij2th4jt/wandb-job.json
+2024-05-10 14:12:43,684 INFO    wandb-upload_1:48947 [upload_job.py:push():88] Uploaded file /Users/loris/Library/Application Support/wandb/artifacts/staging/tmphx_cnv4e
+2024-05-10 14:12:45,082 INFO    SenderThread:48947 [sender.py:send_artifact():1467] sent artifact job-git_github.com_Loris-Manganelli_challenge-modal.git_train.py - {'id': 'QXJ0aWZhY3Q6ODMwMjE0MTEz', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjE2OTk1Njg1Mw==', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6ODI4NjMzMjI3', 'versionIndex': 3}}}
+2024-05-10 14:12:45,082 DEBUG   SenderThread:48947 [sender.py:send_request():405] send_request: defer
+2024-05-10 14:12:45,082 INFO    SenderThread:48947 [sender.py:send_request_defer():609] handle sender defer: 9
+2024-05-10 14:12:45,082 INFO    SenderThread:48947 [dir_watcher.py:finish():358] shutting down directory watcher
+2024-05-10 14:12:46,025 INFO    SenderThread:48947 [dir_watcher.py:finish():388] scan: /Users/loris/X/MODAL/Challenge/challenge-modal/outputs/train/2024-05-10_14-12-33/wandb/run-20240510_141235-2wbmmhii/files
+2024-05-10 14:12:46,026 INFO    SenderThread:48947 [dir_watcher.py:finish():402] scan save: /Users/loris/X/MODAL/Challenge/challenge-modal/outputs/train/2024-05-10_14-12-33/wandb/run-20240510_141235-2wbmmhii/files/requirements.txt requirements.txt
+2024-05-10 14:12:46,026 INFO    SenderThread:48947 [dir_watcher.py:finish():402] scan save: /Users/loris/X/MODAL/Challenge/challenge-modal/outputs/train/2024-05-10_14-12-33/wandb/run-20240510_141235-2wbmmhii/files/output.log output.log
+2024-05-10 14:12:46,030 INFO    SenderThread:48947 [dir_watcher.py:finish():402] scan save: /Users/loris/X/MODAL/Challenge/challenge-modal/outputs/train/2024-05-10_14-12-33/wandb/run-20240510_141235-2wbmmhii/files/config.yaml config.yaml
+2024-05-10 14:12:46,033 INFO    SenderThread:48947 [dir_watcher.py:finish():402] scan save: /Users/loris/X/MODAL/Challenge/challenge-modal/outputs/train/2024-05-10_14-12-33/wandb/run-20240510_141235-2wbmmhii/files/wandb-summary.json wandb-summary.json
+2024-05-10 14:12:46,036 INFO    SenderThread:48947 [dir_watcher.py:finish():402] scan save: /Users/loris/X/MODAL/Challenge/challenge-modal/outputs/train/2024-05-10_14-12-33/wandb/run-20240510_141235-2wbmmhii/files/conda-environment.yaml conda-environment.yaml
+2024-05-10 14:12:46,037 INFO    SenderThread:48947 [dir_watcher.py:finish():402] scan save: /Users/loris/X/MODAL/Challenge/challenge-modal/outputs/train/2024-05-10_14-12-33/wandb/run-20240510_141235-2wbmmhii/files/wandb-metadata.json wandb-metadata.json
+2024-05-10 14:12:46,039 INFO    SenderThread:48947 [sender.py:transition_state():613] send defer: 10
+2024-05-10 14:12:46,040 DEBUG   SenderThread:48947 [sender.py:send_request():405] send_request: poll_exit
+2024-05-10 14:12:46,040 DEBUG   HandlerThread:48947 [handler.py:handle_request():158] handle_request: defer
+2024-05-10 14:12:46,040 INFO    HandlerThread:48947 [handler.py:handle_request_defer():184] handle defer: 10
+2024-05-10 14:12:46,042 DEBUG   SenderThread:48947 [sender.py:send_request():405] send_request: defer
+2024-05-10 14:12:46,043 INFO    SenderThread:48947 [sender.py:send_request_defer():609] handle sender defer: 10
+2024-05-10 14:12:46,043 INFO    SenderThread:48947 [file_pusher.py:finish():169] shutting down file pusher
+2024-05-10 14:12:46,409 INFO    wandb-upload_1:48947 [upload_job.py:push():130] Uploaded file /Users/loris/X/MODAL/Challenge/challenge-modal/outputs/train/2024-05-10_14-12-33/wandb/run-20240510_141235-2wbmmhii/files/output.log
+2024-05-10 14:12:46,410 INFO    wandb-upload_0:48947 [upload_job.py:push():130] Uploaded file /Users/loris/X/MODAL/Challenge/challenge-modal/outputs/train/2024-05-10_14-12-33/wandb/run-20240510_141235-2wbmmhii/files/requirements.txt
+2024-05-10 14:12:46,602 INFO    wandb-upload_4:48947 [upload_job.py:push():130] Uploaded file /Users/loris/X/MODAL/Challenge/challenge-modal/outputs/train/2024-05-10_14-12-33/wandb/run-20240510_141235-2wbmmhii/files/conda-environment.yaml
+2024-05-10 14:12:46,603 INFO    wandb-upload_2:48947 [upload_job.py:push():130] Uploaded file /Users/loris/X/MODAL/Challenge/challenge-modal/outputs/train/2024-05-10_14-12-33/wandb/run-20240510_141235-2wbmmhii/files/config.yaml
+2024-05-10 14:12:46,609 INFO    wandb-upload_3:48947 [upload_job.py:push():130] Uploaded file /Users/loris/X/MODAL/Challenge/challenge-modal/outputs/train/2024-05-10_14-12-33/wandb/run-20240510_141235-2wbmmhii/files/wandb-summary.json
+2024-05-10 14:12:46,810 INFO    Thread-11 (_thread_body):48947 [sender.py:transition_state():613] send defer: 11
+2024-05-10 14:12:46,811 DEBUG   HandlerThread:48947 [handler.py:handle_request():158] handle_request: defer
+2024-05-10 14:12:46,811 INFO    HandlerThread:48947 [handler.py:handle_request_defer():184] handle defer: 11
+2024-05-10 14:12:46,811 DEBUG   SenderThread:48947 [sender.py:send_request():405] send_request: defer
+2024-05-10 14:12:46,811 INFO    SenderThread:48947 [sender.py:send_request_defer():609] handle sender defer: 11
+2024-05-10 14:12:46,811 INFO    SenderThread:48947 [file_pusher.py:join():175] waiting for file pusher
+2024-05-10 14:12:46,812 INFO    SenderThread:48947 [sender.py:transition_state():613] send defer: 12
+2024-05-10 14:12:46,812 DEBUG   HandlerThread:48947 [handler.py:handle_request():158] handle_request: defer
+2024-05-10 14:12:46,812 INFO    HandlerThread:48947 [handler.py:handle_request_defer():184] handle defer: 12
+2024-05-10 14:12:46,814 DEBUG   SenderThread:48947 [sender.py:send_request():405] send_request: defer
+2024-05-10 14:12:46,814 INFO    SenderThread:48947 [sender.py:send_request_defer():609] handle sender defer: 12
+2024-05-10 14:12:46,814 INFO    SenderThread:48947 [file_stream.py:finish():601] file stream finish called
+2024-05-10 14:12:46,821 DEBUG   HandlerThread:48947 [handler.py:handle_request():158] handle_request: poll_exit
+2024-05-10 14:12:46,959 INFO    SenderThread:48947 [file_stream.py:finish():605] file stream finish is done
+2024-05-10 14:12:46,959 INFO    SenderThread:48947 [sender.py:transition_state():613] send defer: 13
+2024-05-10 14:12:46,959 DEBUG   SenderThread:48947 [sender.py:send_request():405] send_request: poll_exit
+2024-05-10 14:12:46,959 DEBUG   HandlerThread:48947 [handler.py:handle_request():158] handle_request: defer
+2024-05-10 14:12:46,960 INFO    HandlerThread:48947 [handler.py:handle_request_defer():184] handle defer: 13
+2024-05-10 14:12:46,960 DEBUG   HandlerThread:48947 [handler.py:handle_request():158] handle_request: status_report
+2024-05-10 14:12:46,960 DEBUG   SenderThread:48947 [sender.py:send_request():405] send_request: defer
+2024-05-10 14:12:46,960 INFO    SenderThread:48947 [sender.py:send_request_defer():609] handle sender defer: 13
+2024-05-10 14:12:46,961 INFO    SenderThread:48947 [sender.py:transition_state():613] send defer: 14
+2024-05-10 14:12:46,961 DEBUG   HandlerThread:48947 [handler.py:handle_request():158] handle_request: defer
+2024-05-10 14:12:46,961 DEBUG   SenderThread:48947 [sender.py:send():378] send: final
+2024-05-10 14:12:46,961 INFO    HandlerThread:48947 [handler.py:handle_request_defer():184] handle defer: 14
+2024-05-10 14:12:46,961 DEBUG   SenderThread:48947 [sender.py:send():378] send: footer
+2024-05-10 14:12:46,961 DEBUG   SenderThread:48947 [sender.py:send_request():405] send_request: defer
+2024-05-10 14:12:46,962 INFO    SenderThread:48947 [sender.py:send_request_defer():609] handle sender defer: 14
+2024-05-10 14:12:46,962 DEBUG   HandlerThread:48947 [handler.py:handle_request():158] handle_request: poll_exit
+2024-05-10 14:12:46,963 DEBUG   HandlerThread:48947 [handler.py:handle_request():158] handle_request: poll_exit
+2024-05-10 14:12:46,963 DEBUG   HandlerThread:48947 [handler.py:handle_request():158] handle_request: server_info
+2024-05-10 14:12:46,964 DEBUG   SenderThread:48947 [sender.py:send_request():405] send_request: poll_exit
+2024-05-10 14:12:46,964 DEBUG   SenderThread:48947 [sender.py:send_request():405] send_request: poll_exit
+2024-05-10 14:12:46,964 DEBUG   HandlerThread:48947 [handler.py:handle_request():158] handle_request: get_summary
+2024-05-10 14:12:46,965 DEBUG   SenderThread:48947 [sender.py:send_request():405] send_request: server_info
+2024-05-10 14:12:46,968 DEBUG   HandlerThread:48947 [handler.py:handle_request():158] handle_request: sampled_history
+2024-05-10 14:12:46,969 DEBUG   HandlerThread:48947 [handler.py:handle_request():158] handle_request: internal_messages
+2024-05-10 14:12:47,104 INFO    MainThread:48947 [wandb_run.py:_footer_history_summary_info():3994] rendering history
+2024-05-10 14:12:47,105 INFO    MainThread:48947 [wandb_run.py:_footer_history_summary_info():4026] rendering summary
+2024-05-10 14:12:47,105 INFO    MainThread:48947 [wandb_run.py:_footer_sync_info():3953] logging synced files
+2024-05-10 14:12:47,106 DEBUG   HandlerThread:48947 [handler.py:handle_request():158] handle_request: shutdown
+2024-05-10 14:12:47,106 INFO    HandlerThread:48947 [handler.py:finish():882] shutting down handler
+2024-05-10 14:12:47,975 INFO    WriterThread:48947 [datastore.py:close():296] close: /Users/loris/X/MODAL/Challenge/challenge-modal/outputs/train/2024-05-10_14-12-33/wandb/run-20240510_141235-2wbmmhii/run-2wbmmhii.wandb
+2024-05-10 14:12:48,111 INFO    SenderThread:48947 [sender.py:finish():1545] shutting down sender
+2024-05-10 14:12:48,111 INFO    SenderThread:48947 [file_pusher.py:finish():169] shutting down file pusher
+2024-05-10 14:12:48,112 INFO    SenderThread:48947 [file_pusher.py:join():175] waiting for file pusher

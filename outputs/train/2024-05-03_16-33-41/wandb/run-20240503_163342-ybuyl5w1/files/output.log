@@ -1,0 +1,12 @@
+Using cache found in /Users/loris/.cache/torch/hub/facebookresearch_dinov2_main
+/Users/loris/.cache/torch/hub/facebookresearch_dinov2_main/dinov2/layers/swiglu_ffn.py:51: UserWarning: xFormers is not available (SwiGLU)
+  warnings.warn("xFormers is not available (SwiGLU)")
+/Users/loris/.cache/torch/hub/facebookresearch_dinov2_main/dinov2/layers/attention.py:33: UserWarning: xFormers is not available (Attention)
+  warnings.warn("xFormers is not available (Attention)")
+/Users/loris/.cache/torch/hub/facebookresearch_dinov2_main/dinov2/layers/block.py:40: UserWarning: xFormers is not available (Block)
+  warnings.warn("xFormers is not available (Block)")
+[2024-05-03 16:33:45,292][dinov2][INFO] - using MLP layer as FFN
+Error executing job with overrides: []
+Error locating target 'data.datamodule.DataModule', set env var HYDRA_FULL_ERROR=1 to see chained exception.
+full_key: datamodule
+Set the environment variable HYDRA_FULL_ERROR=1 for a complete stack trace.

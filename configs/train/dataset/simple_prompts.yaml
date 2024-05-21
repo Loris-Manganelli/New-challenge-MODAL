@@ -1,0 +1,15 @@
+defaults:
+  - train_transform1: simple1
+  - train_transform2: simple2
+  - train_transform3: simple3
+  - train_transform4: simple4
+  - train_transform5: simple5
+  - test_transform: simple
+
+name: simple_prompts
+num_classes: 37
+batch_size: 128
+num_workers: 8
+train_path: ${data_dir}/train/simple_prompts
+real_images_val_path: ${data_dir}/val
+test_path: ${data_dir}/test
