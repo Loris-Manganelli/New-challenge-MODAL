@@ -12,6 +12,7 @@ datamodule:
   real_images_val_path: ${dataset.real_images_val_path}
   train_transform1: ${dataset.train_transform1}
   train_transform2: ${dataset.train_transform2}
+  train_transform3: ${dataset.train_transform3}
   val_transform: ${dataset.test_transform}
   batch_size: ${dataset.batch_size}
   num_workers: ${dataset.num_workers}
