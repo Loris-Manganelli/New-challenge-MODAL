@@ -18,7 +18,7 @@ def create_output(cfg):
     images_list = os.listdir(test_dataset_path)
     # filter out non-image files
     images_list = [image for image in images_list if image.endswith(".jpg")]
-
+    
     idx=0
     image_name = images_list[idx]
     image_path = os.path.join(test_dataset_path, image_name)
@@ -36,7 +36,7 @@ def llava_compute(image):
                                                           torch_dtype=torch.float16, 
                                                           low_cpu_mem_usage=True,
                                                           load_in_4bit=True, #INSTALLER pip install bitsandbytes
-                                                          use_flash_attention_2=True) #INSTALLER https://github.com/Dao-AILab/flash-attention
+                                                          use_flash_attention_2=False) #INSTALLER https://github.com/Dao-AILab/flash-attention
     model.to("cuda:0")
 
     # prepare image and text prompt, using the appropriate prompt template
