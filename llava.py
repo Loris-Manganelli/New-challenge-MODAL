@@ -43,7 +43,7 @@ def llava_compute(image):
     url = "https://github.com/haotian-liu/LLaVA/blob/1a91fc274d7c35a9b50b3cb29c4247ae5837ce39/images/llava_v1_5_radar.jpg?raw=true"
     prompt = "[INST] <image>\nWhat is shown in this image? [/INST]"
 
-    inputs = processor(prompt, image, return_tensors="pt").to("cuda:0")
+    inputs = processor(prompt, image, return_tensors="pt").to("cpu")
 
     # autoregressively complete prompt
     output = model.generate(**inputs, max_new_tokens=100)

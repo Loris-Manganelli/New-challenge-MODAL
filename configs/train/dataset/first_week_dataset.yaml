@@ -1,7 +1,5 @@
 defaults:
-  - train_transform1: simple1
-  - train_transform2: simple2
-  - train_transform3: simple3
+  - train_transform: simple1
   - test_transform:   simple
 
 name: first_week_dataset
