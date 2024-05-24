@@ -35,8 +35,13 @@ def llava_compute(image):
     model = LlavaNextForConditionalGeneration.from_pretrained("llava-hf/llava-v1.6-mistral-7b-hf", 
                                                           torch_dtype=torch.float16, 
                                                           low_cpu_mem_usage=True,
+<<<<<<< HEAD
                                                           load_in_4bit=True, #INSTALLER pip install bitsandbytes
                                                           use_flash_attention_2=False) #INSTALLER https://github.com/Dao-AILab/flash-attention
+=======
+                                                          load_in_4bit=False, #INSTALLER pip install bitsandbytes
+                                                          use_flash_attention_2=True) #INSTALLER https://github.com/Dao-AILab/flash-attention
+>>>>>>> 505b27d82299f9abcb5cec5bdcec0da83c02ae27
     model.to("cuda:0")
 
     # prepare image and text prompt, using the appropriate prompt template
