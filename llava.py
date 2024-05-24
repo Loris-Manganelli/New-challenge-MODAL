@@ -49,3 +49,5 @@ def llava_compute(image):
     output = model.generate(**inputs, max_new_tokens=100)
 
     print(processor.decode(output[0], skip_special_tokens=True))
+
+create_output()
