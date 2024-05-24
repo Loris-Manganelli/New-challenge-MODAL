@@ -35,7 +35,7 @@ def llava_compute(image):
     model = LlavaNextForConditionalGeneration.from_pretrained("llava-hf/llava-v1.6-mistral-7b-hf", 
                                                           torch_dtype=torch.float16, 
                                                           low_cpu_mem_usage=True,
-                                                          load_in_4bit=False, #INSTALLER pip install bitsandbytes
+                                                          load_in_4bit=True, #INSTALLER pip install bitsandbytes
                                                           use_flash_attention_2=False) #INSTALLER https://github.com/Dao-AILab/flash-attention
     model.to("cuda:0")
 
