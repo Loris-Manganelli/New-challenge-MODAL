@@ -12,13 +12,13 @@ def train(cfg):
     optimizer = hydra.utils.instantiate(cfg.optim, params=model.parameters())
     loss_fn = hydra.utils.instantiate(cfg.loss_fn)
 
-    datamodule = hydra.utils.instantiate(cfg.datamodule) #objet de classe DataModule avec tous les paramètres de config
-
-    train_loader = datamodule.train_dataloader() #on applique la méhode train_dataloader à cet objet
-    val_loaders = datamodule.val_dataloader()
-
     k = 0
     for epoch in tqdm(range(cfg.epochs)):
+
+        datamodule = hydra.utils.instantiate(cfg.datamodule) #objet de classe DataModule avec tous les paramètres de config
+        train_loader = datamodule.train_dataloader() #on applique la méhode train_dataloader à cet objet datamodule
+        val_loaders = datamodule.val_dataloader()
+
         epoch_loss = 0
         epoch_num_correct = 0
         num_samples = 0

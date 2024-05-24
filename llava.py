@@ -36,14 +36,14 @@ def llava_compute(image):
                                                           torch_dtype=torch.float16, 
                                                           low_cpu_mem_usage=True,
                                                           load_in_4bit=False, #INSTALLER pip install bitsandbytes
-                                                          use_flash_attention_2=True) #INSTALLER https://github.com/Dao-AILab/flash-attention
-    model.to("cuda:0")
+                                                          use_flash_attention_2=False) #INSTALLER https://github.com/Dao-AILab/flash-attention
+    model.to("cpu")
 
     # prepare image and text prompt, using the appropriate prompt template
     url = "https://github.com/haotian-liu/LLaVA/blob/1a91fc274d7c35a9b50b3cb29c4247ae5837ce39/images/llava_v1_5_radar.jpg?raw=true"
     prompt = "[INST] <image>\nWhat is shown in this image? [/INST]"
 
-    inputs = processor(prompt, image, return_tensors="pt").to("cuda:0")
+    inputs = processor(prompt, image, return_tensors="pt").to("cpu")
 
     # autoregressively complete prompt
     output = model.generate(**inputs, max_new_tokens=100)
