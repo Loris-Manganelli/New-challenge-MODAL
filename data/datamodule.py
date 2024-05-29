@@ -100,15 +100,6 @@ class MultiLabelDataset(torch.utils.data.Dataset):
         labels = filename.split('_')[:2]  # Get the first two parts of the filename
         labels = [(label, 0.5) for label in labels]  # Assign a weight of 0.5 to each class
 
+        labels = torch.tensor(labels)
 
-        num_classes = len(set(label[0] for label in labels))
-        label_tensor = torch.zeros(num_classes)
-        for label in labels:
-            label_idx = int(label[0].split('class')[1]) - 1  # Assuming the class labels are in the format 'classX'
-            label_tensor[label_idx] = label[1]
-
-        # Make sure the image and label tensors have the correct shape and data type
-        image = image.float()  # Convert the image to float32
-        label_tensor = label_tensor.unsqueeze(0)  # Add a batch dimension to the label tensor
-
-        return image, label_tensor
+        return image, labels
