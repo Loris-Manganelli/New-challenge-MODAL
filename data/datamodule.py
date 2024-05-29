@@ -69,7 +69,7 @@ class DataModule:
 
         mixup_dataset = MultiLabelDataset(self.mixup_dir, self.train_transform)
         return DataLoader(
-            ConcatDataset(self.dataset, mixup_dataset),
+            ConcatDataset([self.dataset, mixup_dataset]),
             batch_size=self.batch_size,
             shuffle=True,
             num_workers=self.num_workers,
