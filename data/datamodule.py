@@ -92,9 +92,8 @@ class MultiLabelDataset(torch.utils.data.Dataset):
         filename = self.filenames[idx]
         image_path = os.path.join(self.root_dir, filename)
         image = Image.open(image_path)
-
-        if self.transform:
-            image = self.transform(image)
+        
+        image = self.train_transform(image)
 
         # Extract the class labels from the filename
         labels = filename.split('_')[:2]  # Get the first two parts of the filename
