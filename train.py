@@ -87,7 +87,7 @@ def train(cfg):
                 **val_metrics,
             }
         )
-        if(k%2 == 0 and k >=5 and k <= 16):
+        if(k%2 == 0 and k >=2):
             torch.save(model.state_dict(), cfg.checkpoint_path + "_" + str(k) + ".pt")
         k=k+1
     torch.save(model.state_dict(), cfg.checkpoint_path + "_final.pt")

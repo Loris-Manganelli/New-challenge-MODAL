@@ -5,7 +5,7 @@ import torch.nn as nn
 class DinoV2Finetune(nn.Module):
     def __init__(self, num_classes, frozen=False, unfreeze_last_layer=True):
         super().__init__()
-        self.backbone = torch.hub.load("facebookresearch/dinov2", "dinov2_vitb14_reg")
+        self.backbone = torch.hub.load("facebookresearch/dinov2", "dinov2_vitg14_reg") #dinov2_vitb14_reg
         self.backbone.head = nn.Identity()
         if frozen:
             for param in self.backbone.parameters():
