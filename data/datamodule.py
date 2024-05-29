@@ -104,7 +104,7 @@ class MultiLabelDataset(torch.utils.data.Dataset):
         labels = filename.split('_')[:2]  # Get the first two parts of the filename
 
         target = torch.zeros(len(classes))
-        target[class_to_idx[0], class_to_idx[1]] = 0.5
+        target[[class_to_idx[0], class_to_idx[1]]] = 0.5
 
         #labels = [(label, 0.5) for label in labels]  # Assign a weight of 0.5 to each class
 
