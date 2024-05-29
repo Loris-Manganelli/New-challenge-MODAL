@@ -21,7 +21,7 @@ class DataModule:
         mixup_dir,
     ):
         self.dataset = ImageFolder(train_dataset_path, transform=train_transform)
-        
+        self.train_transform = train_transform
         self.train_dataset, self.val_dataset = torch.utils.data.random_split(
             self.dataset,
             [
