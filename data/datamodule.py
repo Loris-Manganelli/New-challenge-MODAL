@@ -96,7 +96,7 @@ class MultiLabelDataset(torch.utils.data.Dataset):
         image = Image.open(image_path)
         
         image = self.transform(image)
-        classes = os.listdir(dir)
+        classes = os.listdir(self.train_dir)
         classes.sort()
         class_to_idx = {classes[i]: i for i in range(len(classes))}
         
