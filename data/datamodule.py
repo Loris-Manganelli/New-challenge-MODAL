@@ -38,6 +38,7 @@ class DataModule:
         self.batch_size = batch_size
         self.num_workers = num_workers
         self.idx_to_class = {v: k for k, v in self.dataset.class_to_idx.items()}
+        self.mixup_dir = mixup_dir
 
 
     def train_dataloader(self):
