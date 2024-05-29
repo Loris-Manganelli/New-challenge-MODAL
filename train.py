@@ -19,10 +19,12 @@ def train(cfg):
         train_loader = datamodule.train_dataloader() #on applique la méhode train_dataloader à cet objet datamodule
         val_loaders = datamodule.val_dataloader()
 
+        concat_dataloader = datamodule.concat_dataloader()
+
         epoch_loss = 0
         epoch_num_correct = 0
         num_samples = 0
-        for i, batch in enumerate(train_loader):
+        for i, batch in enumerate(concat_dataloader):
             images, labels = batch
             images = images.to(device)
             labels = labels.to(device)
