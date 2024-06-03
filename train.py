@@ -19,6 +19,8 @@ def train(cfg):
         train_loader = datamodule.train_dataloader() #on applique la méhode train_dataloader à cet objet datamodule
         val_loaders = datamodule.val_dataloader()
 
+        #concat_dataloader = datamodule.concat_dataloader()
+
         epoch_loss = 0
         epoch_num_correct = 0
         num_samples = 0
@@ -87,7 +89,7 @@ def train(cfg):
                 **val_metrics,
             }
         )
-        if(k%2 == 0 and k >=7 and k <= 25):
+        if(k%2 == 0 and k >=2):
             torch.save(model.state_dict(), cfg.checkpoint_path + "_" + str(k) + ".pt")
         k=k+1
     torch.save(model.state_dict(), cfg.checkpoint_path + "_final.pt")
