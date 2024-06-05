@@ -1,0 +1,6 @@
+1/ Install ComfyUI by following the instructions on https://github.com/comfyanonymous/ComfyUI
+2/ Install ComfyUI manager https://github.com/ltdrdata/ComfyUI-Manager
+3/ Install IPAdapter and place the models in the correct folders https://github.com/cubiq/ComfyUI_IPAdapter_plus
+4/ Launch ComfyUI and load the workflow ComfyUI_workflow.json
+5/ Go to the manager, press "Install Missing nodes" and install everything.
+6/ Configure the paths of the images folders (the bright pinks nodes)

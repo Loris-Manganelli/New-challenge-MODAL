@@ -1,0 +1,3971 @@
+{
+  "last_node_id": 231,
+  "last_link_id": 343,
+  "nodes": [
+    {
+      "id": 61,
+      "type": "MathExpression|pysssss",
+      "pos": [
+        -550,
+        -670
+      ],
+      "size": {
+        "0": 314.76190185546875,
+        "1": 122.79502868652344
+      },
+      "flags": {},
+      "order": 26,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "a",
+          "type": "INT,FLOAT,IMAGE,LATENT",
+          "link": 70
+        },
+        {
+          "name": "b",
+          "type": "INT,FLOAT,IMAGE,LATENT",
+          "link": null
+        },
+        {
+          "name": "c",
+          "type": "INT,FLOAT,IMAGE,LATENT",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "INT",
+          "type": "INT",
+          "links": [
+            73
+          ],
+          "shape": 3,
+          "slot_index": 0
+        },
+        {
+          "name": "FLOAT",
+          "type": "FLOAT",
+          "links": null,
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "MathExpression|pysssss"
+      },
+      "widgets_values": [
+        "a%8"
+      ]
+    },
+    {
+      "id": 51,
+      "type": "Note",
+      "pos": [
+        -960.9532498224496,
+        399.0119011674336
+      ],
+      "size": {
+        "0": 263.6553039550781,
+        "1": 58
+      },
+      "flags": {},
+      "order": 0,
+      "mode": 0,
+      "properties": {
+        "text": ""
+      },
+      "widgets_values": [
+        "DreamshaperXLTurbo à partir de img 82"
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 161,
+      "type": "PreviewImage",
+      "pos": [
+        2399.2208088645802,
+        1295.8845966734643
+      ],
+      "size": {
+        "0": 348.8174743652344,
+        "1": 274.468994140625
+      },
+      "flags": {},
+      "order": 65,
+      "mode": 2,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 264
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "PreviewImage"
+      }
+    },
+    {
+      "id": 201,
+      "type": "ImagesGridByColumns",
+      "pos": [
+        -490.7791911354142,
+        1625.8845966734646
+      ],
+      "size": {
+        "0": 315,
+        "1": 102
+      },
+      "flags": {},
+      "order": 30,
+      "mode": 2,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 307
+        },
+        {
+          "name": "annotation",
+          "type": "GRID_ANNOTATION",
+          "link": 302
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            304
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ImagesGridByColumns"
+      },
+      "widgets_values": [
+        0,
+        6
+      ]
+    },
+    {
+      "id": 213,
+      "type": "Reroute",
+      "pos": [
+        -196.95324982244986,
+        354.1944835502468
+      ],
+      "size": [
+        75,
+        26
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "",
+          "type": "*",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "",
+          "type": "*",
+          "links": null
+        }
+      ],
+      "properties": {
+        "showOutputText": false,
+        "horizontal": false
+      }
+    },
+    {
+      "id": 210,
+      "type": "ImagesGridByColumns",
+      "pos": [
+        -430.77919113541446,
+        2745.8845966734652
+      ],
+      "size": {
+        "0": 315,
+        "1": 102
+      },
+      "flags": {},
+      "order": 48,
+      "mode": 2,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 311
+        },
+        {
+          "name": "annotation",
+          "type": "GRID_ANNOTATION",
+          "link": 310
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            313
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ImagesGridByColumns"
+      },
+      "widgets_values": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": 209,
+      "type": "GridAnnotation",
+      "pos": [
+        -930.7791911354137,
+        2765.8845966734652
+      ],
+      "size": {
+        "0": 400,
+        "1": 200
+      },
+      "flags": {},
+      "order": 2,
+      "mode": 2,
+      "outputs": [
+        {
+          "name": "GRID_ANNOTATION",
+          "type": "GRID_ANNOTATION",
+          "links": [
+            310
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "GridAnnotation"
+      },
+      "widgets_values": [
+        "IPA1",
+        "",
+        100
+      ]
+    },
+    {
+      "id": 212,
+      "type": "PreviewImage",
+      "pos": [
+        -10.779191135414155,
+        2745.8845966734652
+      ],
+      "size": {
+        "0": 200.78863525390625,
+        "1": 250.54330444335938
+      },
+      "flags": {},
+      "order": 56,
+      "mode": 2,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 313
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "PreviewImage"
+      }
+    },
+    {
+      "id": 211,
+      "type": "PreviewImage",
+      "pos": [
+        -0.7791911354141217,
+        2455.8845966734652
+      ],
+      "size": {
+        "0": 193.526611328125,
+        "1": 237.82025146484375
+      },
+      "flags": {},
+      "order": 55,
+      "mode": 2,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 312
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "PreviewImage"
+      }
+    },
+    {
+      "id": 36,
+      "type": "MathExpression|pysssss",
+      "pos": [
+        -741.9532498224496,
+        164.01190116743444
+      ],
+      "size": {
+        "0": 396.7338562011719,
+        "1": 126.2540283203125
+      },
+      "flags": {
+        "collapsed": true
+      },
+      "order": 27,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "a",
+          "type": "INT,FLOAT,IMAGE,LATENT",
+          "link": 39
+        },
+        {
+          "name": "b",
+          "type": "INT,FLOAT,IMAGE,LATENT",
+          "link": null
+        },
+        {
+          "name": "c",
+          "type": "INT,FLOAT,IMAGE,LATENT",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "INT",
+          "type": "INT",
+          "links": [
+            41
+          ],
+          "shape": 3,
+          "slot_index": 0
+        },
+        {
+          "name": "FLOAT",
+          "type": "FLOAT",
+          "links": null,
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "MathExpression|pysssss"
+      },
+      "widgets_values": [
+        "a%37"
+      ]
+    },
+    {
+      "id": 19,
+      "type": "PrimitiveNode",
+      "pos": [
+        -462.9532498224499,
+        362.0119011674339
+      ],
+      "size": {
+        "0": 210,
+        "1": 58
+      },
+      "flags": {},
+      "order": 3,
+      "mode": 0,
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            23
+          ],
+          "slot_index": 0,
+          "widget": {
+            "name": "text_c"
+          }
+        }
+      ],
+      "properties": {
+        "Run widget replace on values": false
+      },
+      "widgets_values": [
+        "cheese, high resolution, masterpiece,"
+      ]
+    },
+    {
+      "id": 18,
+      "type": "PrimitiveNode",
+      "pos": [
+        -374.95324982245006,
+        5.011901167434314
+      ],
+      "size": {
+        "0": 210,
+        "1": 58
+      },
+      "flags": {},
+      "order": 4,
+      "mode": 0,
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            22
+          ],
+          "slot_index": 0,
+          "widget": {
+            "name": "text_a"
+          }
+        }
+      ],
+      "properties": {
+        "Run widget replace on values": false
+      },
+      "widgets_values": [
+        "Picture of a"
+      ]
+    },
+    {
+      "id": 15,
+      "type": "Text Concatenate",
+      "pos": [
+        -73.95324982245005,
+        115.01190116743444
+      ],
+      "size": {
+        "0": 315,
+        "1": 178
+      },
+      "flags": {},
+      "order": 35,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "text_a",
+          "type": "STRING",
+          "link": 22,
+          "widget": {
+            "name": "text_a"
+          },
+          "slot_index": 0
+        },
+        {
+          "name": "text_b",
+          "type": "STRING",
+          "link": 21,
+          "widget": {
+            "name": "text_b"
+          }
+        },
+        {
+          "name": "text_c",
+          "type": "STRING",
+          "link": 23,
+          "widget": {
+            "name": "text_c"
+          }
+        },
+        {
+          "name": "text_d",
+          "type": "STRING",
+          "link": null,
+          "widget": {
+            "name": "text_d"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "title": "Basic Prompt",
+      "properties": {
+        "Node name for S&R": "Text Concatenate"
+      },
+      "widgets_values": [
+        " ",
+        "false",
+        "Picture of a",
+        "",
+        "cheese, high resolution, masterpiece,",
+        ""
+      ]
+    },
+    {
+      "id": 223,
+      "type": "ShowText|pysssss",
+      "pos": [
+        3053.5599296198216,
+        213.78829110989565
+      ],
+      "size": {
+        "0": 315,
+        "1": 76
+      },
+      "flags": {},
+      "order": 52,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "link": 326,
+          "widget": {
+            "name": "text"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": null,
+          "shape": 6
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ShowText|pysssss"
+      },
+      "widgets_values": [
+        "",
+        "SCARMOZA_PARMESAN"
+      ]
+    },
+    {
+      "id": 143,
+      "type": "PrimitiveNode",
+      "pos": [
+        2790.5599296198216,
+        128.78829110989557
+      ],
+      "size": {
+        "0": 210,
+        "1": 58
+      },
+      "flags": {},
+      "order": 5,
+      "mode": 0,
+      "outputs": [
+        {
+          "name": "connect to widget input",
+          "type": "*",
+          "links": [],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Run widget replace on values": false
+      }
+    },
+    {
+      "id": 222,
+      "type": "Reroute",
+      "pos": [
+        2787.5599296198216,
+        -295.21170889010466
+      ],
+      "size": [
+        75,
+        26
+      ],
+      "flags": {},
+      "order": 40,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "",
+          "type": "*",
+          "link": 322,
+          "widget": {
+            "name": "value"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "",
+          "type": "STRING",
+          "links": [
+            323
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "showOutputText": false,
+        "horizontal": false
+      }
+    },
+    {
+      "id": 23,
+      "type": "Reroute",
+      "pos": [
+        2782.5599296198216,
+        -108.21170889010448
+      ],
+      "size": [
+        75,
+        26
+      ],
+      "flags": {},
+      "order": 36,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "",
+          "type": "*",
+          "link": 25,
+          "widget": {
+            "name": "value"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "",
+          "type": "STRING",
+          "links": [
+            225
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "showOutputText": false,
+        "horizontal": false
+      }
+    },
+    {
+      "id": 142,
+      "type": "Text Concatenate",
+      "pos": [
+        3046.5599296198216,
+        -10.211708890104342
+      ],
+      "size": {
+        "0": 315,
+        "1": 178
+      },
+      "flags": {},
+      "order": 45,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "text_a",
+          "type": "STRING",
+          "link": 225,
+          "widget": {
+            "name": "text_a"
+          },
+          "slot_index": 0
+        },
+        {
+          "name": "text_b",
+          "type": "STRING",
+          "link": 323,
+          "widget": {
+            "name": "text_b"
+          },
+          "slot_index": 1
+        },
+        {
+          "name": "text_c",
+          "type": "STRING",
+          "link": null,
+          "widget": {
+            "name": "text_c"
+          },
+          "slot_index": 2
+        },
+        {
+          "name": "text_d",
+          "type": "STRING",
+          "link": null,
+          "widget": {
+            "name": "text_d"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            224,
+            326
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "title": "Image name",
+      "properties": {
+        "Node name for S&R": "Text Concatenate"
+      },
+      "widgets_values": [
+        "_",
+        "true",
+        "/Data/luc.boudier/dataset/train/ComfyUI/",
+        "DOUBLEIPA_STRONG",
+        "cheese, high resolution,",
+        ""
+      ]
+    },
+    {
+      "id": 6,
+      "type": "CLIPTextEncode",
+      "pos": [
+        897.5640523394529,
+        214.18938015325202
+      ],
+      "size": {
+        "0": 308.6148986816406,
+        "1": 54
+      },
+      "flags": {
+        "collapsed": false
+      },
+      "order": 58,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "link": 87
+        },
+        {
+          "name": "text",
+          "type": "STRING",
+          "link": 332,
+          "widget": {
+            "name": "text"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "CONDITIONING",
+          "type": "CONDITIONING",
+          "links": [
+            148,
+            267
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "CLIPTextEncode"
+      },
+      "widgets_values": [
+        ""
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 202,
+      "type": "PreviewImage",
+      "pos": [
+        -100.77919113541402,
+        1615.884596673464
+      ],
+      "size": {
+        "0": 728.3260498046875,
+        "1": 758.9789428710938
+      },
+      "flags": {},
+      "order": 34,
+      "mode": 2,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 304
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "PreviewImage"
+      }
+    },
+    {
+      "id": 38,
+      "type": "ShowText|pysssss",
+      "pos": [
+        2164.2983899218743,
+        604.4753408984375
+      ],
+      "size": {
+        "0": 310.9860534667969,
+        "1": 76.00000762939453
+      },
+      "flags": {},
+      "order": 37,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "link": 44,
+          "widget": {
+            "name": "text"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": null,
+          "shape": 6
+        }
+      ],
+      "title": "Label",
+      "properties": {
+        "Node name for S&R": "ShowText|pysssss"
+      },
+      "widgets_values": [
+        "",
+        "SCARMOZA"
+      ],
+      "color": "#2a363b",
+      "bgcolor": "#3f5159"
+    },
+    {
+      "id": 50,
+      "type": "PreviewImage",
+      "pos": [
+        2171.2983899218743,
+        237.47534089843754
+      ],
+      "size": {
+        "0": 294.449462890625,
+        "1": 311.6904296875
+      },
+      "flags": {},
+      "order": 66,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 144
+        }
+      ],
+      "title": "Generated Image",
+      "properties": {
+        "Node name for S&R": "PreviewImage"
+      },
+      "color": "#323",
+      "bgcolor": "#535"
+    },
+    {
+      "id": 60,
+      "type": "ShowText|pysssss",
+      "pos": [
+        2149.2983899218743,
+        -218.52465910156246
+      ],
+      "size": {
+        "0": 380,
+        "1": 100
+      },
+      "flags": {},
+      "order": 50,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "link": 68,
+          "widget": {
+            "name": "text"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": null,
+          "shape": 6
+        }
+      ],
+      "title": "Prompt",
+      "properties": {
+        "Node name for S&R": "ShowText|pysssss"
+      },
+      "widgets_values": [
+        "",
+        "A round of Scarmoza cheese on a wooden board, close-up shot."
+      ],
+      "color": "#323",
+      "bgcolor": "#535"
+    },
+    {
+      "id": 219,
+      "type": "MathExpression|pysssss",
+      "pos": [
+        -716.5158478411502,
+        -197.61314442994376
+      ],
+      "size": {
+        "0": 396.7338562011719,
+        "1": 126.2540283203125
+      },
+      "flags": {
+        "collapsed": true
+      },
+      "order": 28,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "a",
+          "type": "INT,FLOAT,IMAGE,LATENT",
+          "link": 318
+        },
+        {
+          "name": "b",
+          "type": "INT,FLOAT,IMAGE,LATENT",
+          "link": null
+        },
+        {
+          "name": "c",
+          "type": "INT,FLOAT,IMAGE,LATENT",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "INT",
+          "type": "INT",
+          "links": [
+            317
+          ],
+          "shape": 3,
+          "slot_index": 0
+        },
+        {
+          "name": "FLOAT",
+          "type": "FLOAT",
+          "links": null,
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "MathExpression|pysssss"
+      },
+      "widgets_values": [
+        "a%37"
+      ]
+    },
+    {
+      "id": 42,
+      "type": "Text Concatenate",
+      "pos": [
+        70.48415215885,
+        -252.6131444299437
+      ],
+      "size": {
+        "0": 315,
+        "1": 178
+      },
+      "flags": {},
+      "order": 38,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "text_a",
+          "type": "STRING",
+          "link": 47,
+          "widget": {
+            "name": "text_a"
+          }
+        },
+        {
+          "name": "text_b",
+          "type": "STRING",
+          "link": 48,
+          "widget": {
+            "name": "text_b"
+          }
+        },
+        {
+          "name": "text_c",
+          "type": "STRING",
+          "link": null,
+          "widget": {
+            "name": "text_c"
+          }
+        },
+        {
+          "name": "text_d",
+          "type": "STRING",
+          "link": null,
+          "widget": {
+            "name": "text_d"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            46,
+            331
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "title": "Images Path",
+      "properties": {
+        "Node name for S&R": "Text Concatenate"
+      },
+      "widgets_values": [
+        "",
+        "true",
+        "/Data/luc.boudier/dataset/val_clean/",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "id": 43,
+      "type": "PrimitiveNode",
+      "pos": [
+        -163.5158478411498,
+        -248.61314442994373
+      ],
+      "size": {
+        "0": 210,
+        "1": 58
+      },
+      "flags": {},
+      "order": 6,
+      "mode": 0,
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            47
+          ],
+          "slot_index": 0,
+          "widget": {
+            "name": "text_a"
+          }
+        }
+      ],
+      "properties": {
+        "Run widget replace on values": false
+      },
+      "widgets_values": [
+        "/Data/luc.boudier/dataset/val_clean/"
+      ]
+    },
+    {
+      "id": 208,
+      "type": "ImagesGridByColumns",
+      "pos": [
+        -410.7791911354145,
+        2485.8845966734652
+      ],
+      "size": {
+        "0": 315,
+        "1": 102
+      },
+      "flags": {},
+      "order": 47,
+      "mode": 2,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 309
+        },
+        {
+          "name": "annotation",
+          "type": "GRID_ANNOTATION",
+          "link": 308
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            312
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ImagesGridByColumns"
+      },
+      "widgets_values": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": 207,
+      "type": "GridAnnotation",
+      "pos": [
+        -930.7791911354137,
+        2495.8845966734652
+      ],
+      "size": {
+        "0": 400,
+        "1": 200
+      },
+      "flags": {},
+      "order": 7,
+      "mode": 2,
+      "outputs": [
+        {
+          "name": "GRID_ANNOTATION",
+          "type": "GRID_ANNOTATION",
+          "links": [
+            308
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "GridAnnotation"
+      },
+      "widgets_values": [
+        "IPA2",
+        "",
+        100
+      ]
+    },
+    {
+      "id": 158,
+      "type": "KSampler (Efficient)",
+      "pos": [
+        1759.220808864584,
+        1195.8845966734646
+      ],
+      "size": {
+        "0": 573.93798828125,
+        "1": 562
+      },
+      "flags": {},
+      "order": 63,
+      "mode": 2,
+      "inputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "link": 266
+        },
+        {
+          "name": "positive",
+          "type": "CONDITIONING",
+          "link": 267
+        },
+        {
+          "name": "negative",
+          "type": "CONDITIONING",
+          "link": 268
+        },
+        {
+          "name": "latent_image",
+          "type": "LATENT",
+          "link": 265
+        },
+        {
+          "name": "optional_vae",
+          "type": "VAE",
+          "link": 269
+        },
+        {
+          "name": "script",
+          "type": "SCRIPT",
+          "link": 277,
+          "slot_index": 5
+        }
+      ],
+      "outputs": [
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": null,
+          "shape": 3
+        },
+        {
+          "name": "CONDITIONING+",
+          "type": "CONDITIONING",
+          "links": null,
+          "shape": 3
+        },
+        {
+          "name": "CONDITIONING-",
+          "type": "CONDITIONING",
+          "links": null,
+          "shape": 3
+        },
+        {
+          "name": "LATENT",
+          "type": "LATENT",
+          "links": null,
+          "shape": 3
+        },
+        {
+          "name": "VAE",
+          "type": "VAE",
+          "links": null,
+          "shape": 3
+        },
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            264
+          ],
+          "shape": 3,
+          "slot_index": 5
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "KSampler (Efficient)"
+      },
+      "widgets_values": [
+        0,
+        null,
+        8,
+        2,
+        "dpmpp_2m_sde",
+        "karras",
+        1,
+        "auto",
+        "true"
+      ],
+      "color": "#332233",
+      "bgcolor": "#553355",
+      "shape": 1
+    },
+    {
+      "id": 25,
+      "type": "Text Concatenate",
+      "pos": [
+        3062.3862263515725,
+        -242.62498456222187
+      ],
+      "size": {
+        "0": 315,
+        "1": 178
+      },
+      "flags": {},
+      "order": 29,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "text_a",
+          "type": "STRING",
+          "link": 29,
+          "widget": {
+            "name": "text_a"
+          },
+          "slot_index": 0
+        },
+        {
+          "name": "text_b",
+          "type": "STRING",
+          "link": null,
+          "widget": {
+            "name": "text_b"
+          }
+        },
+        {
+          "name": "text_c",
+          "type": "STRING",
+          "link": null,
+          "widget": {
+            "name": "text_c"
+          },
+          "slot_index": 2
+        },
+        {
+          "name": "text_d",
+          "type": "STRING",
+          "link": null,
+          "widget": {
+            "name": "text_d"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            27,
+            30
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "title": "Output path",
+      "properties": {
+        "Node name for S&R": "Text Concatenate"
+      },
+      "widgets_values": [
+        "",
+        "true",
+        "/Data/luc.boudier/dataset/MIXUP",
+        "",
+        "cheese, high resolution,",
+        ""
+      ]
+    },
+    {
+      "id": 27,
+      "type": "ShowText|pysssss",
+      "pos": [
+        3406.3862263515725,
+        -247.62498456222187
+      ],
+      "size": {
+        "0": 320,
+        "1": 80
+      },
+      "flags": {},
+      "order": 33,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "link": 30,
+          "widget": {
+            "name": "text"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": null,
+          "shape": 6
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ShowText|pysssss"
+      },
+      "widgets_values": [
+        "",
+        "/Data/luc.boudier/dataset/MIXUP"
+      ]
+    },
+    {
+      "id": 14,
+      "type": "Text Load Line From File",
+      "pos": [
+        -471.9532498224498,
+        112.01190116743439
+      ],
+      "size": {
+        "0": 315,
+        "1": 198
+      },
+      "flags": {},
+      "order": 31,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "multiline_text",
+          "type": "STRING",
+          "link": null,
+          "widget": {
+            "name": "multiline_text"
+          }
+        },
+        {
+          "name": "index",
+          "type": "INT",
+          "link": 41,
+          "widget": {
+            "name": "index"
+          }
+        },
+        {
+          "name": "file_path",
+          "type": "STRING",
+          "link": 338,
+          "widget": {
+            "name": "file_path"
+          },
+          "slot_index": 2
+        }
+      ],
+      "outputs": [
+        {
+          "name": "line_text",
+          "type": "STRING",
+          "links": [
+            21,
+            25,
+            44,
+            48,
+            65
+          ],
+          "shape": 3,
+          "slot_index": 0
+        },
+        {
+          "name": "dictionary",
+          "type": "DICT",
+          "links": null,
+          "shape": 3
+        }
+      ],
+      "title": "Cheese's Name",
+      "properties": {
+        "Node name for S&R": "Cheese's Name"
+      },
+      "widgets_values": [
+        "/Data/luc.boudier/ComfyUI/list_of_cheese.txt",
+        "[filename]",
+        "TextBatch",
+        "index",
+        0,
+        ""
+      ]
+    },
+    {
+      "id": 217,
+      "type": "Text Load Line From File",
+      "pos": [
+        -495.5158478411501,
+        -246.61314442994376
+      ],
+      "size": {
+        "0": 315,
+        "1": 198
+      },
+      "flags": {},
+      "order": 32,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "multiline_text",
+          "type": "STRING",
+          "link": null,
+          "widget": {
+            "name": "multiline_text"
+          }
+        },
+        {
+          "name": "index",
+          "type": "INT",
+          "link": 317,
+          "widget": {
+            "name": "index"
+          }
+        },
+        {
+          "name": "label",
+          "type": "STRING",
+          "link": 339,
+          "widget": {
+            "name": "label"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "line_text",
+          "type": "STRING",
+          "links": [
+            322
+          ],
+          "shape": 3,
+          "slot_index": 0
+        },
+        {
+          "name": "dictionary",
+          "type": "DICT",
+          "links": null,
+          "shape": 3
+        }
+      ],
+      "title": "Cheese's Name",
+      "properties": {
+        "Node name for S&R": "Cheese's Name"
+      },
+      "widgets_values": [
+        "/Data/luc.boudier/ComfyUI/list_of_cheese.txt",
+        "[filename]",
+        "/Data/luc.boudier/ComfyUI/list_of_cheese.txt",
+        "index",
+        0,
+        ""
+      ]
+    },
+    {
+      "id": 227,
+      "type": "PrimitiveNode",
+      "pos": [
+        -829.5158478411502,
+        -13.613144429943791
+      ],
+      "size": {
+        "0": 210,
+        "1": 58
+      },
+      "flags": {},
+      "order": 8,
+      "mode": 0,
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            338,
+            339
+          ],
+          "widget": {
+            "name": "file_path"
+          },
+          "slot_index": 0
+        }
+      ],
+      "title": "List of cheese.txt Path",
+      "properties": {
+        "Run widget replace on values": false
+      },
+      "widgets_values": [
+        "/Data/luc.boudier/ComfyUI/list_of_cheese.txt"
+      ],
+      "color": "#ffbcbc",
+      "bgcolor": "#ffa8a8"
+    },
+    {
+      "id": 167,
+      "type": "XY Input: CFG Scale",
+      "pos": [
+        944.7229438398563,
+        1436.3845246961055
+      ],
+      "size": {
+        "0": 315,
+        "1": 106
+      },
+      "flags": {},
+      "order": 9,
+      "mode": 2,
+      "outputs": [
+        {
+          "name": "X or Y",
+          "type": "XY",
+          "links": [
+            281
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "XY Input: CFG Scale"
+      },
+      "widgets_values": [
+        5,
+        1,
+        5
+      ],
+      "color": "#223333",
+      "bgcolor": "#335555",
+      "shape": 1
+    },
+    {
+      "id": 159,
+      "type": "XY Plot",
+      "pos": [
+        1328.7229438398567,
+        1264.3845246961055
+      ],
+      "size": {
+        "0": 315,
+        "1": 194
+      },
+      "flags": {},
+      "order": 22,
+      "mode": 2,
+      "inputs": [
+        {
+          "name": "dependencies",
+          "type": "DEPENDENCIES",
+          "link": null,
+          "slot_index": 0
+        },
+        {
+          "name": "X",
+          "type": "XY",
+          "link": 280,
+          "slot_index": 1
+        },
+        {
+          "name": "Y",
+          "type": "XY",
+          "link": 281,
+          "slot_index": 2
+        }
+      ],
+      "outputs": [
+        {
+          "name": "SCRIPT",
+          "type": "SCRIPT",
+          "links": [
+            277
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "XY Plot"
+      },
+      "widgets_values": [
+        0,
+        "False",
+        "Horizontal",
+        "True",
+        "Images"
+      ],
+      "color": "#332233",
+      "bgcolor": "#553355",
+      "shape": 1
+    },
+    {
+      "id": 168,
+      "type": "XY Input: Steps",
+      "pos": [
+        944.7229438398563,
+        1257.3845246961055
+      ],
+      "size": {
+        "0": 315,
+        "1": 130
+      },
+      "flags": {},
+      "order": 10,
+      "mode": 2,
+      "outputs": [
+        {
+          "name": "X or Y",
+          "type": "XY",
+          "links": [
+            280
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "XY Input: Steps"
+      },
+      "widgets_values": [
+        "steps",
+        5,
+        2,
+        10,
+        0,
+        10,
+        10,
+        20,
+        10,
+        20
+      ],
+      "color": "#223333",
+      "bgcolor": "#335555",
+      "shape": 1
+    },
+    {
+      "id": 205,
+      "type": "LoadImagesFromDir //Inspire",
+      "pos": [
+        -850.2770561601434,
+        1541.3845246961052
+      ],
+      "size": {
+        "0": 315,
+        "1": 170
+      },
+      "flags": {},
+      "order": 23,
+      "mode": 2,
+      "inputs": [
+        {
+          "name": "directory",
+          "type": "STRING",
+          "link": 340,
+          "widget": {
+            "name": "directory"
+          },
+          "slot_index": 0
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            307
+          ],
+          "shape": 3,
+          "slot_index": 0
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": null,
+          "shape": 3
+        },
+        {
+          "name": "INT",
+          "type": "INT",
+          "links": null,
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LoadImagesFromDir //Inspire"
+      },
+      "widgets_values": [
+        "/Data/luc.boudier/ComfyUI/output/reblochonxy/",
+        100,
+        0,
+        false
+      ]
+    },
+    {
+      "id": 192,
+      "type": "GridAnnotation",
+      "pos": [
+        -928.2770561601434,
+        1762.3845246961057
+      ],
+      "size": {
+        "0": 400,
+        "1": 200
+      },
+      "flags": {},
+      "order": 11,
+      "mode": 2,
+      "outputs": [
+        {
+          "name": "GRID_ANNOTATION",
+          "type": "GRID_ANNOTATION",
+          "links": [
+            302
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "GridAnnotation"
+      },
+      "widgets_values": [
+        "IPA1 0.0;IPA1 0.2;IPA1 0.4;IPA1 0.6;IPA1 0.8;IPA1 1.0;",
+        "IPA2 0.0;IPA2 0.2;IPA2 0.4;IPA2 0.6;IPA2 0.8;IPA2 1.0;",
+        100
+      ]
+    },
+    {
+      "id": 228,
+      "type": "PrimitiveNode",
+      "pos": [
+        -1079.2770561601433,
+        1546.3845246961052
+      ],
+      "size": {
+        "0": 210,
+        "1": 58
+      },
+      "flags": {},
+      "order": 12,
+      "mode": 2,
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            340
+          ],
+          "widget": {
+            "name": "directory"
+          }
+        }
+      ],
+      "title": "Output Grid Path",
+      "properties": {
+        "Run widget replace on values": false
+      },
+      "widgets_values": [
+        "/Data/luc.boudier/ComfyUI/output/reblochonxy/"
+      ],
+      "color": "#ff9494",
+      "bgcolor": "#ff8080"
+    },
+    {
+      "id": 186,
+      "type": "SelectInputs //Browser",
+      "pos": [
+        -210.27705616014327,
+        1241.3845246961057
+      ],
+      "size": {
+        "0": 429.42083740234375,
+        "1": 310.0903015136719
+      },
+      "flags": {},
+      "order": 13,
+      "mode": 2,
+      "outputs": [
+        {
+          "name": "input_1",
+          "type": "INPUT",
+          "links": [
+            293
+          ],
+          "shape": 3,
+          "slot_index": 0
+        },
+        {
+          "name": "input_2",
+          "type": "INPUT",
+          "links": [
+            294
+          ],
+          "shape": 3,
+          "slot_index": 1
+        },
+        {
+          "name": "input_3",
+          "type": "INPUT",
+          "links": null,
+          "shape": 3
+        },
+        {
+          "name": "input_4",
+          "type": "INPUT",
+          "links": null,
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "SelectInputs //Browser"
+      },
+      "widgets_values": [
+        "#46::IPAdapter 1::weight",
+        "#145::IPAdapter 2::weight",
+        "#19::Primitive::value",
+        "#19::Primitive::value",
+        "[{\"node_id\":\"46\",\"node_title\":\"IPAdapter 1\",\"widget_name\":\"weight\"},{\"node_id\":\"145\",\"node_title\":\"IPAdapter 2\",\"widget_name\":\"weight\"},{\"node_id\":\"19\",\"node_title\":\"Primitive\",\"widget_name\":\"value\"},{\"node_id\":\"19\",\"node_title\":\"Primitive\",\"widget_name\":\"value\"}]",
+        ""
+      ]
+    },
+    {
+      "id": 187,
+      "type": "XyzPlot //Browser",
+      "pos": [
+        248.7229438398565,
+        1223.3845246961057
+      ],
+      "size": {
+        "0": 210,
+        "1": 284
+      },
+      "flags": {},
+      "order": 67,
+      "mode": 2,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 295
+        },
+        {
+          "name": "input_x",
+          "type": "INPUT",
+          "link": 293
+        },
+        {
+          "name": "input_y",
+          "type": "INPUT",
+          "link": 294
+        },
+        {
+          "name": "input_z",
+          "type": "INPUT",
+          "link": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "XyzPlot //Browser"
+      },
+      "widgets_values": [
+        "0;0.2;0.4;0.6;0.8;1.0;",
+        "0;0.2;0.4;0.6;0.8;1.0;",
+        "",
+        "reblochonxy"
+      ]
+    },
+    {
+      "id": 24,
+      "type": "Image Save",
+      "pos": [
+        3418,
+        -98
+      ],
+      "size": {
+        "0": 315,
+        "1": 550
+      },
+      "flags": {},
+      "order": 68,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 343
+        },
+        {
+          "name": "output_path",
+          "type": "STRING",
+          "link": 27,
+          "widget": {
+            "name": "output_path"
+          },
+          "slot_index": 1
+        },
+        {
+          "name": "filename_prefix",
+          "type": "STRING",
+          "link": 224,
+          "widget": {
+            "name": "filename_prefix"
+          }
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "Image Save"
+      },
+      "widgets_values": [
+        "[time(%Y-%m-%d)]",
+        "ComfyUI",
+        "_",
+        4,
+        "false",
+        "jpg",
+        100,
+        "false",
+        "false",
+        "false",
+        "true",
+        "true",
+        "true"
+      ]
+    },
+    {
+      "id": 148,
+      "type": "PreviewImage",
+      "pos": [
+        2334,
+        -64
+      ],
+      "size": {
+        "0": 230.0849609375,
+        "1": 254.20144653320312
+      },
+      "flags": {},
+      "order": 57,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 316
+        }
+      ],
+      "title": "IPA2 Image",
+      "properties": {
+        "Node name for S&R": "PreviewImage"
+      },
+      "color": "#232",
+      "bgcolor": "#353"
+    },
+    {
+      "id": 49,
+      "type": "PreviewImage",
+      "pos": [
+        2068,
+        -65
+      ],
+      "size": {
+        "0": 237.58924865722656,
+        "1": 255.80055236816406
+      },
+      "flags": {},
+      "order": 53,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 59
+        }
+      ],
+      "title": "IPA1 Image",
+      "properties": {
+        "Node name for S&R": "PreviewImage"
+      },
+      "color": "#232",
+      "bgcolor": "#353"
+    },
+    {
+      "id": 214,
+      "type": "PrepImageForClipVision",
+      "pos": [
+        824.3561204233494,
+        -671.4837158941209
+      ],
+      "size": {
+        "0": 315,
+        "1": 106
+      },
+      "flags": {},
+      "order": 49,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "link": 314
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            316,
+            328
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "PrepImageForClipVision"
+      },
+      "widgets_values": [
+        "LANCZOS",
+        "center",
+        0.1
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 47,
+      "type": "IPAdapterUnifiedLoader",
+      "pos": [
+        1163.3561204233497,
+        -569.483715894121
+      ],
+      "size": {
+        "0": 315,
+        "1": 78
+      },
+      "flags": {},
+      "order": 24,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "link": 85
+        },
+        {
+          "name": "ipadapter",
+          "type": "IPADAPTER",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "links": [
+            54
+          ],
+          "shape": 3,
+          "slot_index": 0
+        },
+        {
+          "name": "ipadapter",
+          "type": "IPADAPTER",
+          "links": [
+            53
+          ],
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "IPAdapterUnifiedLoader"
+      },
+      "widgets_values": [
+        "PLUS (high strength)"
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 145,
+      "type": "IPAdapter",
+      "pos": [
+        1531.3561204233497,
+        -437.48371589412073
+      ],
+      "size": {
+        "0": 315,
+        "1": 190
+      },
+      "flags": {},
+      "order": 61,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "link": 329
+        },
+        {
+          "name": "ipadapter",
+          "type": "IPADAPTER",
+          "link": 330,
+          "slot_index": 1
+        },
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "link": 328
+        },
+        {
+          "name": "attn_mask",
+          "type": "MASK",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": [
+            238,
+            266
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "title": "IPAdapter 2",
+      "properties": {
+        "Node name for S&R": "IPAdapter"
+      },
+      "widgets_values": [
+        0.3,
+        0,
+        1,
+        "standard"
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 146,
+      "type": "IPAdapterUnifiedLoader",
+      "pos": [
+        1535.3561204233497,
+        -572.483715894121
+      ],
+      "size": {
+        "0": 315,
+        "1": 78
+      },
+      "flags": {},
+      "order": 60,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "link": 232
+        },
+        {
+          "name": "ipadapter",
+          "type": "IPADAPTER",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "links": [
+            329
+          ],
+          "shape": 3,
+          "slot_index": 0
+        },
+        {
+          "name": "ipadapter",
+          "type": "IPADAPTER",
+          "links": [
+            330
+          ],
+          "shape": 3,
+          "slot_index": 1
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "IPAdapterUnifiedLoader"
+      },
+      "widgets_values": [
+        "PLUS (high strength)"
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 57,
+      "type": "ShowText|pysssss",
+      "pos": [
+        -30,
+        -910
+      ],
+      "size": {
+        "0": 320,
+        "1": 80
+      },
+      "flags": {},
+      "order": 44,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "link": 67,
+          "widget": {
+            "name": "text"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": null,
+          "shape": 6
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ShowText|pysssss"
+      },
+      "widgets_values": [
+        "",
+        "/Data/luc.boudier/ComfyUI/Prompts_4/SCARMOZA.txt"
+      ]
+    },
+    {
+      "id": 54,
+      "type": "Text Concatenate",
+      "pos": [
+        -550,
+        -890
+      ],
+      "size": {
+        "0": 315,
+        "1": 178
+      },
+      "flags": {},
+      "order": 39,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "text_a",
+          "type": "STRING",
+          "link": 63,
+          "widget": {
+            "name": "text_a"
+          }
+        },
+        {
+          "name": "text_b",
+          "type": "STRING",
+          "link": 65,
+          "widget": {
+            "name": "text_b"
+          }
+        },
+        {
+          "name": "text_c",
+          "type": "STRING",
+          "link": 66,
+          "widget": {
+            "name": "text_c"
+          }
+        },
+        {
+          "name": "text_d",
+          "type": "STRING",
+          "link": null,
+          "widget": {
+            "name": "text_d"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            64,
+            67
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "Text Concatenate"
+      },
+      "widgets_values": [
+        "",
+        "true",
+        "/Data/luc.boudier/ComfyUI/Prompts_4/",
+        "",
+        ".txt",
+        ""
+      ]
+    },
+    {
+      "id": 56,
+      "type": "PrimitiveNode",
+      "pos": [
+        -898,
+        -770
+      ],
+      "size": {
+        "0": 210,
+        "1": 58
+      },
+      "flags": {},
+      "order": 14,
+      "mode": 0,
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            66
+          ],
+          "slot_index": 0,
+          "widget": {
+            "name": "text_c"
+          }
+        }
+      ],
+      "properties": {
+        "Run widget replace on values": false
+      },
+      "widgets_values": [
+        ".txt"
+      ]
+    },
+    {
+      "id": 53,
+      "type": "Text Load Line From File",
+      "pos": [
+        -31,
+        -783
+      ],
+      "size": {
+        "0": 315,
+        "1": 198
+      },
+      "flags": {},
+      "order": 43,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "multiline_text",
+          "type": "STRING",
+          "link": null,
+          "widget": {
+            "name": "multiline_text"
+          }
+        },
+        {
+          "name": "file_path",
+          "type": "STRING",
+          "link": 64,
+          "widget": {
+            "name": "file_path"
+          }
+        },
+        {
+          "name": "index",
+          "type": "INT",
+          "link": 73,
+          "widget": {
+            "name": "index"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "line_text",
+          "type": "STRING",
+          "links": [
+            68,
+            227
+          ],
+          "shape": 3,
+          "slot_index": 0
+        },
+        {
+          "name": "dictionary",
+          "type": "DICT",
+          "links": null,
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "Text Load Line From File"
+      },
+      "widgets_values": [
+        "/Data/luc.boudier/ComfyUI/list_of_cheese.txt",
+        "[filename]",
+        "TextBatch",
+        "index",
+        0,
+        ""
+      ]
+    },
+    {
+      "id": 144,
+      "type": "Reroute",
+      "pos": [
+        502,
+        52
+      ],
+      "size": [
+        75,
+        26
+      ],
+      "flags": {},
+      "order": 51,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "",
+          "type": "*",
+          "link": 227,
+          "widget": {
+            "name": "value"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "",
+          "type": "STRING",
+          "links": [
+            332,
+            342
+          ],
+          "slot_index": 0
+        }
+      ],
+      "title": "Prompt Mistral",
+      "properties": {
+        "showOutputText": false,
+        "horizontal": false
+      }
+    },
+    {
+      "id": 231,
+      "type": "ShowText|pysssss",
+      "pos": [
+        498,
+        119
+      ],
+      "size": {
+        "0": 318.7679138183594,
+        "1": 94.36930847167969
+      },
+      "flags": {},
+      "order": 59,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "link": 342,
+          "widget": {
+            "name": "text"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": null,
+          "shape": 6
+        }
+      ],
+      "title": "Positive Prompt",
+      "properties": {
+        "Node name for S&R": "ShowText|pysssss"
+      },
+      "widgets_values": [
+        "",
+        "A round of Scarmoza cheese on a wooden board, close-up shot."
+      ]
+    },
+    {
+      "id": 55,
+      "type": "PrimitiveNode",
+      "pos": [
+        -951,
+        -889
+      ],
+      "size": {
+        "0": 210,
+        "1": 58
+      },
+      "flags": {},
+      "order": 15,
+      "mode": 0,
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            63
+          ],
+          "slot_index": 0,
+          "widget": {
+            "name": "text_a"
+          }
+        }
+      ],
+      "title": "Prompt Folder Path",
+      "properties": {
+        "Run widget replace on values": false
+      },
+      "widgets_values": [
+        "/Data/luc.boudier/ComfyUI/Prompts_4/"
+      ],
+      "color": "#ffdada",
+      "bgcolor": "#ffc6c6"
+    },
+    {
+      "id": 5,
+      "type": "EmptyLatentImage",
+      "pos": [
+        898,
+        458
+      ],
+      "size": {
+        "0": 315,
+        "1": 106
+      },
+      "flags": {},
+      "order": 16,
+      "mode": 0,
+      "outputs": [
+        {
+          "name": "LATENT",
+          "type": "LATENT",
+          "links": [
+            2,
+            265
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "EmptyLatentImage"
+      },
+      "widgets_values": [
+        1024,
+        1024,
+        1
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 7,
+      "type": "CLIPTextEncode",
+      "pos": [
+        897.5640523394529,
+        314.18938015325216
+      ],
+      "size": {
+        "0": 313.2698974609375,
+        "1": 76.00001525878906
+      },
+      "flags": {},
+      "order": 25,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "link": 88
+        }
+      ],
+      "outputs": [
+        {
+          "name": "CONDITIONING",
+          "type": "CONDITIONING",
+          "links": [
+            133,
+            268
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "CLIPTextEncode"
+      },
+      "widgets_values": [
+        "low quality, worst quality, ugly, deformed, noisy, blurry, "
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 48,
+      "type": "PrepImageForClipVision",
+      "pos": [
+        820,
+        -363
+      ],
+      "size": {
+        "0": 315,
+        "1": 106
+      },
+      "flags": {},
+      "order": 46,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "link": 57
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            59,
+            327
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "PrepImageForClipVision"
+      },
+      "widgets_values": [
+        "LANCZOS",
+        "center",
+        0.1
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 46,
+      "type": "IPAdapter",
+      "pos": [
+        1163,
+        -444
+      ],
+      "size": {
+        "0": 315,
+        "1": 190
+      },
+      "flags": {},
+      "order": 54,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "link": 54
+        },
+        {
+          "name": "ipadapter",
+          "type": "IPADAPTER",
+          "link": 53,
+          "slot_index": 1
+        },
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "link": 327
+        },
+        {
+          "name": "attn_mask",
+          "type": "MASK",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": [
+            232
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "title": "IPAdapter 1",
+      "properties": {
+        "Node name for S&R": "IPAdapter"
+      },
+      "widgets_values": [
+        0.3,
+        0,
+        1,
+        "standard"
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 4,
+      "type": "CheckpointLoaderSimple",
+      "pos": [
+        498,
+        254
+      ],
+      "size": {
+        "0": 315,
+        "1": 98
+      },
+      "flags": {},
+      "order": 17,
+      "mode": 0,
+      "outputs": [
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": [
+            85
+          ],
+          "slot_index": 0
+        },
+        {
+          "name": "CLIP",
+          "type": "CLIP",
+          "links": [
+            87,
+            88
+          ],
+          "slot_index": 1
+        },
+        {
+          "name": "VAE",
+          "type": "VAE",
+          "links": [
+            8,
+            269
+          ],
+          "slot_index": 2
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "CheckpointLoaderSimple"
+      },
+      "widgets_values": [
+        "dreamshaperXLTurbo.safetensors"
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 58,
+      "type": "Seed",
+      "pos": [
+        -1003,
+        -648
+      ],
+      "size": {
+        "0": 309.97344970703125,
+        "1": 142
+      },
+      "flags": {
+        "collapsed": false
+      },
+      "order": 18,
+      "mode": 0,
+      "outputs": [
+        {
+          "name": "seed",
+          "type": "SEED",
+          "links": null,
+          "shape": 3,
+          "slot_index": 0
+        },
+        {
+          "name": "number",
+          "type": "NUMBER",
+          "links": null,
+          "shape": 3
+        },
+        {
+          "name": "float",
+          "type": "FLOAT",
+          "links": null,
+          "shape": 3,
+          "slot_index": 2
+        },
+        {
+          "name": "int",
+          "type": "INT",
+          "links": [
+            70
+          ],
+          "shape": 3,
+          "slot_index": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "Seed"
+      },
+      "widgets_values": [
+        918382303658045,
+        "randomize"
+      ]
+    },
+    {
+      "id": 29,
+      "type": "Seed",
+      "pos": [
+        -1094.9532498224496,
+        146.01190116743444
+      ],
+      "size": {
+        "0": 309.97344970703125,
+        "1": 142
+      },
+      "flags": {
+        "collapsed": false
+      },
+      "order": 19,
+      "mode": 0,
+      "outputs": [
+        {
+          "name": "seed",
+          "type": "SEED",
+          "links": null,
+          "shape": 3,
+          "slot_index": 0
+        },
+        {
+          "name": "number",
+          "type": "NUMBER",
+          "links": null,
+          "shape": 3
+        },
+        {
+          "name": "float",
+          "type": "FLOAT",
+          "links": null,
+          "shape": 3
+        },
+        {
+          "name": "int",
+          "type": "INT",
+          "links": [
+            39
+          ],
+          "shape": 3,
+          "slot_index": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "Seed"
+      },
+      "widgets_values": [
+        40831,
+        "increment"
+      ]
+    },
+    {
+      "id": 218,
+      "type": "Seed",
+      "pos": [
+        -1093.5158478411502,
+        -234.61314442994373
+      ],
+      "size": {
+        "0": 309.97344970703125,
+        "1": 142
+      },
+      "flags": {
+        "collapsed": false
+      },
+      "order": 20,
+      "mode": 0,
+      "outputs": [
+        {
+          "name": "seed",
+          "type": "SEED",
+          "links": null,
+          "shape": 3,
+          "slot_index": 0
+        },
+        {
+          "name": "number",
+          "type": "NUMBER",
+          "links": null,
+          "shape": 3
+        },
+        {
+          "name": "float",
+          "type": "FLOAT",
+          "links": null,
+          "shape": 3
+        },
+        {
+          "name": "int",
+          "type": "INT",
+          "links": [
+            318
+          ],
+          "shape": 3,
+          "slot_index": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "Seed"
+      },
+      "widgets_values": [
+        332789490632977,
+        "randomize"
+      ]
+    },
+    {
+      "id": 26,
+      "type": "PrimitiveNode",
+      "pos": [
+        2788,
+        -212
+      ],
+      "size": {
+        "0": 210,
+        "1": 58
+      },
+      "flags": {},
+      "order": 21,
+      "mode": 0,
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            29
+          ],
+          "slot_index": 0,
+          "widget": {
+            "name": "text_a"
+          }
+        }
+      ],
+      "title": "Output Path",
+      "properties": {
+        "Run widget replace on values": false
+      },
+      "widgets_values": [
+        "/Data/luc.boudier/dataset/MIXUP"
+      ],
+      "color": "#ffcbcb",
+      "bgcolor": "#ffb7b7"
+    },
+    {
+      "id": 41,
+      "type": "Load Image Batch",
+      "pos": [
+        482.1971147047558,
+        -366.7449936931832
+      ],
+      "size": {
+        "0": 315,
+        "1": 222
+      },
+      "flags": {},
+      "order": 41,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "path",
+          "type": "STRING",
+          "link": 46,
+          "widget": {
+            "name": "path"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "links": [
+            57,
+            309
+          ],
+          "shape": 3,
+          "slot_index": 0
+        },
+        {
+          "name": "filename_text",
+          "type": "STRING",
+          "links": null,
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "Load Image Batch"
+      },
+      "widgets_values": [
+        "random",
+        0,
+        "Batch 001",
+        "/Data/luc.boudier/dataset/val",
+        "*",
+        "false",
+        "true"
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 147,
+      "type": "Load Image Batch",
+      "pos": [
+        488.1971147047558,
+        -677.7449936931831
+      ],
+      "size": {
+        "0": 315,
+        "1": 222
+      },
+      "flags": {},
+      "order": 42,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "path",
+          "type": "STRING",
+          "link": 331,
+          "widget": {
+            "name": "path"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "links": [
+            311,
+            314
+          ],
+          "shape": 3,
+          "slot_index": 0
+        },
+        {
+          "name": "filename_text",
+          "type": "STRING",
+          "links": null,
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "Load Image Batch"
+      },
+      "widgets_values": [
+        "random",
+        0,
+        "Batch 001",
+        "/Data/luc.boudier/dataset/val",
+        "*",
+        "false",
+        "true"
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 3,
+      "type": "KSampler",
+      "pos": [
+        1308,
+        224
+      ],
+      "size": {
+        "0": 315,
+        "1": 262
+      },
+      "flags": {},
+      "order": 62,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "link": 238
+        },
+        {
+          "name": "positive",
+          "type": "CONDITIONING",
+          "link": 148
+        },
+        {
+          "name": "negative",
+          "type": "CONDITIONING",
+          "link": 133
+        },
+        {
+          "name": "latent_image",
+          "type": "LATENT",
+          "link": 2
+        }
+      ],
+      "outputs": [
+        {
+          "name": "LATENT",
+          "type": "LATENT",
+          "links": [
+            7
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "KSampler"
+      },
+      "widgets_values": [
+        962304603219152,
+        "randomize",
+        8,
+        1.3,
+        "dpmpp_2m_sde",
+        "karras",
+        1
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 8,
+      "type": "VAEDecode",
+      "pos": [
+        1667.564052339453,
+        234.18938015325202
+      ],
+      "size": {
+        "0": 210,
+        "1": 46
+      },
+      "flags": {},
+      "order": 64,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "samples",
+          "type": "LATENT",
+          "link": 7
+        },
+        {
+          "name": "vae",
+          "type": "VAE",
+          "link": 8
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            144,
+            295,
+            343
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "VAEDecode"
+      },
+      "color": "#432",
+      "bgcolor": "#653"
+    }
+  ],
+  "links": [
+    [
+      2,
+      5,
+      0,
+      3,
+      3,
+      "LATENT"
+    ],
+    [
+      7,
+      3,
+      0,
+      8,
+      0,
+      "LATENT"
+    ],
+    [
+      8,
+      4,
+      2,
+      8,
+      1,
+      "VAE"
+    ],
+    [
+      21,
+      14,
+      0,
+      15,
+      1,
+      "STRING"
+    ],
+    [
+      22,
+      18,
+      0,
+      15,
+      0,
+      "STRING"
+    ],
+    [
+      23,
+      19,
+      0,
+      15,
+      2,
+      "STRING"
+    ],
+    [
+      25,
+      14,
+      0,
+      23,
+      0,
+      "*"
+    ],
+    [
+      27,
+      25,
+      0,
+      24,
+      1,
+      "STRING"
+    ],
+    [
+      29,
+      26,
+      0,
+      25,
+      0,
+      "STRING"
+    ],
+    [
+      30,
+      25,
+      0,
+      27,
+      0,
+      "STRING"
+    ],
+    [
+      39,
+      29,
+      3,
+      36,
+      0,
+      "INT,FLOAT,IMAGE,LATENT"
+    ],
+    [
+      41,
+      36,
+      0,
+      14,
+      1,
+      "INT"
+    ],
+    [
+      44,
+      14,
+      0,
+      38,
+      0,
+      "STRING"
+    ],
+    [
+      46,
+      42,
+      0,
+      41,
+      0,
+      "STRING"
+    ],
+    [
+      47,
+      43,
+      0,
+      42,
+      0,
+      "STRING"
+    ],
+    [
+      48,
+      14,
+      0,
+      42,
+      1,
+      "STRING"
+    ],
+    [
+      53,
+      47,
+      1,
+      46,
+      1,
+      "IPADAPTER"
+    ],
+    [
+      54,
+      47,
+      0,
+      46,
+      0,
+      "MODEL"
+    ],
+    [
+      57,
+      41,
+      0,
+      48,
+      0,
+      "IMAGE"
+    ],
+    [
+      59,
+      48,
+      0,
+      49,
+      0,
+      "IMAGE"
+    ],
+    [
+      63,
+      55,
+      0,
+      54,
+      0,
+      "STRING"
+    ],
+    [
+      64,
+      54,
+      0,
+      53,
+      1,
+      "STRING"
+    ],
+    [
+      65,
+      14,
+      0,
+      54,
+      1,
+      "STRING"
+    ],
+    [
+      66,
+      56,
+      0,
+      54,
+      2,
+      "STRING"
+    ],
+    [
+      67,
+      54,
+      0,
+      57,
+      0,
+      "STRING"
+    ],
+    [
+      68,
+      53,
+      0,
+      60,
+      0,
+      "STRING"
+    ],
+    [
+      70,
+      58,
+      3,
+      61,
+      0,
+      "INT,FLOAT,IMAGE,LATENT"
+    ],
+    [
+      73,
+      61,
+      0,
+      53,
+      2,
+      "INT"
+    ],
+    [
+      85,
+      4,
+      0,
+      47,
+      0,
+      "MODEL"
+    ],
+    [
+      87,
+      4,
+      1,
+      6,
+      0,
+      "CLIP"
+    ],
+    [
+      88,
+      4,
+      1,
+      7,
+      0,
+      "CLIP"
+    ],
+    [
+      133,
+      7,
+      0,
+      3,
+      2,
+      "CONDITIONING"
+    ],
+    [
+      144,
+      8,
+      0,
+      50,
+      0,
+      "IMAGE"
+    ],
+    [
+      148,
+      6,
+      0,
+      3,
+      1,
+      "CONDITIONING"
+    ],
+    [
+      224,
+      142,
+      0,
+      24,
+      2,
+      "STRING"
+    ],
+    [
+      225,
+      23,
+      0,
+      142,
+      0,
+      "STRING"
+    ],
+    [
+      227,
+      53,
+      0,
+      144,
+      0,
+      "*"
+    ],
+    [
+      232,
+      46,
+      0,
+      146,
+      0,
+      "MODEL"
+    ],
+    [
+      238,
+      145,
+      0,
+      3,
+      0,
+      "MODEL"
+    ],
+    [
+      264,
+      158,
+      5,
+      161,
+      0,
+      "IMAGE"
+    ],
+    [
+      265,
+      5,
+      0,
+      158,
+      3,
+      "LATENT"
+    ],
+    [
+      266,
+      145,
+      0,
+      158,
+      0,
+      "MODEL"
+    ],
+    [
+      267,
+      6,
+      0,
+      158,
+      1,
+      "CONDITIONING"
+    ],
+    [
+      268,
+      7,
+      0,
+      158,
+      2,
+      "CONDITIONING"
+    ],
+    [
+      269,
+      4,
+      2,
+      158,
+      4,
+      "VAE"
+    ],
+    [
+      277,
+      159,
+      0,
+      158,
+      5,
+      "SCRIPT"
+    ],
+    [
+      280,
+      168,
+      0,
+      159,
+      1,
+      "XY"
+    ],
+    [
+      281,
+      167,
+      0,
+      159,
+      2,
+      "XY"
+    ],
+    [
+      293,
+      186,
+      0,
+      187,
+      1,
+      "INPUT"
+    ],
+    [
+      294,
+      186,
+      1,
+      187,
+      2,
+      "INPUT"
+    ],
+    [
+      295,
+      8,
+      0,
+      187,
+      0,
+      "IMAGE"
+    ],
+    [
+      302,
+      192,
+      0,
+      201,
+      1,
+      "GRID_ANNOTATION"
+    ],
+    [
+      304,
+      201,
+      0,
+      202,
+      0,
+      "IMAGE"
+    ],
+    [
+      307,
+      205,
+      0,
+      201,
+      0,
+      "IMAGE"
+    ],
+    [
+      308,
+      207,
+      0,
+      208,
+      1,
+      "GRID_ANNOTATION"
+    ],
+    [
+      309,
+      41,
+      0,
+      208,
+      0,
+      "IMAGE"
+    ],
+    [
+      310,
+      209,
+      0,
+      210,
+      1,
+      "GRID_ANNOTATION"
+    ],
+    [
+      311,
+      147,
+      0,
+      210,
+      0,
+      "IMAGE"
+    ],
+    [
+      312,
+      208,
+      0,
+      211,
+      0,
+      "IMAGE"
+    ],
+    [
+      313,
+      210,
+      0,
+      212,
+      0,
+      "IMAGE"
+    ],
+    [
+      314,
+      147,
+      0,
+      214,
+      0,
+      "IMAGE"
+    ],
+    [
+      316,
+      214,
+      0,
+      148,
+      0,
+      "IMAGE"
+    ],
+    [
+      317,
+      219,
+      0,
+      217,
+      1,
+      "INT"
+    ],
+    [
+      318,
+      218,
+      3,
+      219,
+      0,
+      "INT,FLOAT,IMAGE,LATENT"
+    ],
+    [
+      322,
+      217,
+      0,
+      222,
+      0,
+      "*"
+    ],
+    [
+      323,
+      222,
+      0,
+      142,
+      1,
+      "STRING"
+    ],
+    [
+      326,
+      142,
+      0,
+      223,
+      0,
+      "STRING"
+    ],
+    [
+      327,
+      48,
+      0,
+      46,
+      2,
+      "IMAGE"
+    ],
+    [
+      328,
+      214,
+      0,
+      145,
+      2,
+      "IMAGE"
+    ],
+    [
+      329,
+      146,
+      0,
+      145,
+      0,
+      "MODEL"
+    ],
+    [
+      330,
+      146,
+      1,
+      145,
+      1,
+      "IPADAPTER"
+    ],
+    [
+      331,
+      42,
+      0,
+      147,
+      0,
+      "STRING"
+    ],
+    [
+      332,
+      144,
+      0,
+      6,
+      1,
+      "STRING"
+    ],
+    [
+      338,
+      227,
+      0,
+      14,
+      2,
+      "STRING"
+    ],
+    [
+      339,
+      227,
+      0,
+      217,
+      2,
+      "STRING"
+    ],
+    [
+      340,
+      228,
+      0,
+      205,
+      0,
+      "STRING"
+    ],
+    [
+      342,
+      144,
+      0,
+      231,
+      0,
+      "STRING"
+    ],
+    [
+      343,
+      8,
+      0,
+      24,
+      0,
+      "IMAGE"
+    ]
+  ],
+  "groups": [
+    {
+      "title": "Save File",
+      "bounding": [
+        2770,
+        -401,
+        1002,
+        1101
+      ],
+      "color": "#3f789e",
+      "font_size": 64,
+      "locked": false
+    },
+    {
+      "title": "Image generation",
+      "bounding": [
+        457,
+        -65,
+        1486,
+        672
+      ],
+      "color": "#A88",
+      "font_size": 64,
+      "locked": false
+    },
+    {
+      "title": "Load Prompt",
+      "bounding": [
+        -1109,
+        -1167,
+        1493,
+        744
+      ],
+      "color": "#3f789e",
+      "font_size": 64,
+      "locked": false
+    },
+    {
+      "title": "Load Label",
+      "bounding": [
+        -1105,
+        -398,
+        1496,
+        1009
+      ],
+      "color": "#3f789e",
+      "font_size": 64,
+      "locked": false
+    },
+    {
+      "title": "IPAdapter",
+      "bounding": [
+        458,
+        -824,
+        1455,
+        719
+      ],
+      "color": "#8A8",
+      "font_size": 64,
+      "locked": false
+    },
+    {
+      "title": "Results",
+      "bounding": [
+        2008,
+        -400,
+        653,
+        1102
+      ],
+      "color": "#b06634",
+      "font_size": 64,
+      "locked": false
+    },
+    {
+      "title": "Grid Plot",
+      "bounding": [
+        -1095,
+        975,
+        3990,
+        2164
+      ],
+      "color": "#898a55",
+      "font_size": 64,
+      "locked": false
+    }
+  ],
+  "config": {},
+  "extra": {},
+  "version": 0.4
+}
